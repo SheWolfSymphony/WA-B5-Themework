@@ -1,1 +1,5235 @@
+/*===================================================================================================================================================================*/
+/*===================================================================================================================================================================*/
+/*===================================================================================================================================================================*/
+/* ===== THIS DOCUMENT WAS CRAFTED BY SHEWOLFSYMPHONY - CC BY - FEEL FREE TO COPY & USE WHATEVER CODE, BUT NOT MY PERSONAL CONTENT - HAVE AT ========================*/
+/*===================================================================================================================================================================*/
+/*===================================================================================================================================================================*/
+/*===================================================================================================================================================================*/
 
+/* --- World CSS Editor Sidebar --- */
+
+.user-css-presentation #css-palette-panel { /*The Sidebar Itself*/
+  background: rgba(255, 255, 255, .8);
+  font-family: Macondo, cursive;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  color: rgba(0, 0, 0, .8);
+  position: fixed!important;
+  width: 25% !important;
+  top: 0px;
+  right: 2px;
+  border: 2px solid yellow;
+  border-radius: 5px;
+  transition: all 0.1s;
+  box-shadow: -5px 0px 10px rgba(77, 69, 69, .8), -10px 0px 
+  20px #ff0000;
+}
+#css-palette-panel h4,
+#css-palette-panel #form-group: first-of-type,
+#css-palette-panel #css-palette-save + p {
+visibility: hidden;
+}
+#css-palette-panel textarea {
+  min-height: 63vh !important;
+  background: rgba(255, 255, 255, .8);
+  color: rgba(0, 0, 0, .8);
+  font-family: Germania One, cursive;
+  line-height: 14px;
+  }
+[class*=css-palette-trigger-pushed] ~ #full-layout .page-article {
+  margin-left: 12% !important;
+   visibility: hidden;
+  }
+.hidden-xs .fa-palette {
+  background: rgba(255, 255, 255, .15);
+  color: red;
+  border-radius: solid 5px;
+  padding: 5px;
+  font-size: 35px;
+  top:​ 0px;
+  right: 0px;
+  border: 2px outset red;
+  position: fixed!important;
+  z-index: 0;
+  animation: linksforfun 2.0s infinite;
+}
+[class*=css-palette-trigger-pushed]:hover ~ #hidden-sidebar #css-palette-panel #css-palette-panel:hover {
+  width: 30% !important;
+}
+[class*=css-palette-trigger]:hover ~ #full-layout .page-article {
+  width: 57%;
+}
+.user-css #div-do-not-print.hidden-xs.d-sm-block.css-palette-trigger-inactive, #div-do-not-print.css-palette-trigger {
+  top: 0;
+  right: 0;
+  border: 2px outset red;
+  position: fixed!important;
+  z-index: 0;
+animation: linksforfun 2.0s infinite;
+}
+.user-css-presentation .world-css-palette-trigger-inactive{   /*hides the sidebar button*/
+   visibility: hidden;
+color: rgba(0, 0, 0, .0);
+}
+/* --- World CSS Editor Sidebar --- */
+
+
+/* ------   Fonts   ------- */
+
+/* Germania One, cursive */
+@font-face {
+  font-family: Germania One;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/germaniaone/v20/Fh4yPjrqIyv2ucM2qzBjeS3uywhP.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* IM Fell English SC, serif */
+@font-face {
+  font-family: IM Fell English SC;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/imfellenglishsc/v16/a8IENpD3CDX-4zrWfr1VY879qFF05pZ7PIIP.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Almendra SC, serif */
+@font-face {
+  font-family: Almendra SC;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/almendrasc/v25/Iure6Yx284eebowr7hbyTaZOrLQ.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Cinzel Decorative, cursive */
+@font-face {
+  font-family: Cinzel Decorative;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/cinzeldecorative/v14/daaCSScvJGqLYhG8nNt8KPPswUAPni7TTMw.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+  font-family: Cinzel Decorative;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/cinzeldecorative/v14/daaHSScvJGqLYhG8nNt8KPPswUAPniZoadlESTE.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+  font-family: Cinzel Decorative;
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/cinzeldecorative/v14/daaHSScvJGqLYhG8nNt8KPPswUAPniZQa9lESTE.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Macondo, cursive */
+@font-face {
+  font-family: Macondo;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/macondo/v21/RrQQboN9-iB1IXmOe2LE0Q.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+shadow}
+/* ------   Fonts   ------- */
+/* ----   Animations   ---- */
+
+/*added*/
+/* links animation */
+@keyframes linksforfun {  /*--- this creates an animation that tells the website to change font color; it starts at 80% opacity and decreases to 60% ---*/
+  from { color: rgba(0, 0, 0, .8), text-shadow: 0px 1px 4px rgba(77, 69, 69, .6); }
+  to { color: rgba(255, 0, 0, .8); }
+}
+/* links animation */
+
+/* desktop background animation */
+@keyframes background-desktop {  /* this creates an animation that tells the backrgound to move; it will shift the background 600 pixels to the top in a single cycle */
+	from { background-position: 0 0; }
+	to { background-position: 0 -600px; }
+}
+
+@keyframes background-desktop-meta {
+	from { background-position: 0 0; }
+	to { background-position: 0 -600px; }
+}
+/* desktop background animation */
+
+/* mobile background animation */
+@keyframes background-mobile {
+	from { background-position: 0 0; }
+	to { background-position: 0 -300px; }
+}
+
+@keyframes background-mobile-meta {
+	from { background-position: 0 0; }
+	to { background-position: 0 300px; }
+}
+/* mobile background animation */
+
+/*Fancy Border Animation*/
+@keyframes topanimation {
+  0% {
+  transform:scaleX(0);
+  transform-origin: left;
+  }
+  50%
+  {
+    transform:scaleX(1);
+  transform-origin: left;
+  }
+  50.1%
+  {
+    transform:scaleX(1);
+  transform-origin: right;
+    
+  }
+  
+  100%
+  {
+    transform:scaleX(0);
+  transform-origin: right;
+    
+  }
+} 
+
+@keyframes leftanimation {
+  0% {
+  transform:scaleY(0);
+  transform-origin: bottom;
+  }
+  50%
+  {
+    transform:scaleY(1);
+  transform-origin: bottom;
+  }
+  50.1%
+  {
+    transform:scaleY(1);
+  transform-origin: top;
+    
+  }
+  
+  100%
+  {
+    transform:scaleY(0);
+  transform-origin: top;
+    
+  }
+} 
+/*Fancy border animation*/
+/* ----   Animations   ---- */
+
+
+/* ------   Global   -------- */
+
+/* Page + Article Background */
+.user-css-presentation { /*this affects the overall background of the world*/
+background: url(https://www.worldanvil.com/uploads/images/dc60f779c8f30bfe0c2e6755d4ce4671.png);
+background-size: 50%;
+background-attachment: fixed; /*this locks the image on the screen; it wont scroll*/
+}
+ .user-css.page, .user-css-extended .page { /*this affects the large page container*/
+   background: url(https://www.worldanvil.com/uploads/images/26f8ebad07725f11e40772abaf386bc6.png);
+   background-size: 600px;
+   background-clip: padding-box;
+   background-position: center;
+   background-repeat: repeat;
+   animation: background-desktop 10s linear infinite; /*this tells the background to follow a predetermined animation over the duration of 10s for an infinite amount of loops*/
+   box-shadow: 0px 0px 0px;
+   overflow: auto;
+   max-height: 800px;
+   padding: 50px;
+   border-image-source: url(https://www.worldanvil.com/uploads/images/f10a0f95a3af2a89a0ce58ffa1086ceb.png);
+   border-image-slice: 20; /*complicated magic that lets you use custom borders. If you can explain this to me please help.*/
+   border-image-repeat: stretch;
+   border-width: 20px;
+   border-style: solid;
+   border-image-outset: 0px;
+   
+}
+/* Page + Article Background */
+
+
+/* Font Styling Global */
+.user-css {
+   color: rgba(0, 0, 0, .7); /*changes the color of associated text*/
+   font-family: Germania One, cursive; /*changes the font of associated text*/
+   font-size: 15px; /*changes the font size of associated text*/
+   line-height: 1.5; /*changes the line spacing of associated text*/
+}
+
+.user-css-extended {
+   color: rgba(0, 0, 0, .7);
+   font-family: Almendra SC, serif;
+   font-size: 15px;
+   line-height: 1.5;
+}
+/* Font Styling Global */
+
+
+
+/* Font Styling H1 */
+.user-css h1 {
+   font-family: Germania One, cursive;
+   font-size: 65px;
+   color: rgba(0, 0, 0, .6);
+}
+
+
+.user-css-extended h1 {
+   font-family: Almendra SC, serif;
+   font-size: 65px;
+   color: rgba(0, 0, 0, .6);
+}
+/* Font Styling H1 */
+
+
+
+/* Font Styling H2 */
+.user-css h2 {
+   text-align: left; /*aligns the text (left/right/center)*/
+   font-size: 35px;
+   text-shadow: 0px 5px 5px rgba(77, 69, 69, .6); /*gives associated text a shadow; (left/right) (top/bottom) (shadow size) (color)*/
+   margin-bottom: 5px;
+   padding: 0px;
+   border-bottom-width: 1px;
+   border-bottom-style: solid;
+   border-bottom-color: rgba(93, 56, 145, .6);
+   color: rgba(0, 0, 0, .7);
+   font-family: Almendra SC, serif;
+}
+
+
+.user-css-extended h2 {
+   text-align: left;
+   font-size: 35px;
+   text-shadow: 0px 5px 5px rgba(77, 69, 69, .6);
+   margin-bottom: 5px;
+   padding: 0px;
+   border-bottom-width: 1px;
+   border-bottom-style: solid;
+   border-bottom-color: rgba(93, 56, 145 .6);
+   color: rgba(0, 0, 0, .7);
+   font-family: Macondo, cursive;
+}
+/* Font Styling H2 */
+
+
+
+/* Font Styling H3 */
+.user-css h3 {
+   text-align: left;
+   font-size: 35px;
+   text-shadow: 0px 5px 5px rgba(77, 69, 69, .6);
+   margin-bottom: 5px;
+   padding: 0px;
+   color: rgba(0, 0, 0, .6);
+   font-family: IM Fell English SC, serif;
+   font-style: normal;
+}
+
+
+.user-css-extended h3 {
+   text-align: left;
+   font-size: 35px;
+   text-shadow: 0px 5px 5px rgba(77, 69, 69, .6);
+   margin-bottom: 5px;
+   padding: 0px;
+   color: rgba(0, 0, 0, .6);
+   font-family: Almendra SC, serif;
+   font-style: normal;
+}
+/* Font Styling H3 */
+
+
+
+/* Font Styling H4 */
+.user-css h4 {
+   text-align: left;
+   font-size: 25px;
+   text-shadow: 0px 5px 5px rgba(77, 69, 69, .6);
+   margin-bottom: 0px;
+   padding: 0px;
+   color: rgba(0, 0, 0, .6);
+   font-family: Cinzel Decorative, cursive;
+}
+
+
+.user-css-extended h4 {
+   text-align: left;
+   font-size: 25px;
+   text-shadow: 0px 5px 5px rgba(77, 69, 69, .6);
+   margin-bottom: 0px;
+   padding: 0px;
+   color: rgba(0, 0, 0, .6);
+   font-family: Almendra SC, serif;
+}
+/* Font Styling H4 */
+
+
+
+/* Font Styling H5 */
+.user-css h5 {
+   text-align: left;
+   font-size: 25px;
+   text-shadow: 0px 5px 5px rgba(77, 69, 69, .6);
+   margin-bottom: 0px;
+   padding: 0px;
+   color: rgba(0, 0, 0, .6);
+   font-family: IM Fell English SC, serif;
+}
+
+
+.user-css-extended h5 {
+   text-align: left;
+   font-size: 25px;
+   text-shadow: 0px 5px 5px rgba(77, 69, 69, .6);
+   margin-bottom: 0px;
+   padding: 0px;
+   color: rgba(0, 0, 0, .6);
+   font-family: IM Fell English SC, serif;
+}
+/* Font Styling H5 */
+
+
+
+/* Spans */   /*dont remember what is considered span but I wrote it for a reason*/
+.user-css span {
+   font-family: Germania One, cursive;
+   color: rgba(0, 0, 0, .7);
+}
+
+
+.user-css-extended span {
+   font-family: Macondo, cursive;
+   color: rgba(0, 0, 0, .7);
+}
+/* Spans */
+
+
+
+/* Font Styling Links */
+.user-css a {
+   font-family: Almendra SC, serif;
+   font-size: 16px;
+   color: rgba(0, 0, 0, .6);
+   animation: linksforfun 2.0s infinite;
+}
+
+.user-css a:hover {  /*adding :hover following the container will allow editing of hover characteristics. The following line increases the opacity of links when hovered over*/ 
+   color: rgba(0, 0, 0, .8);
+}
+
+
+.user-css-extended a {
+   font-family: IM Fell English SC, serif;
+   font-size: 16px;
+   color: rgba(0, 0, 0,);
+   animation: linksforfun 2.0s infinite;
+}
+
+
+.user-css-extended a:hover {
+   color: rgba(22, 255, 0, .8);
+}
+/* Font Styling Links */
+
+
+
+/* Font Styling Homepage Followers */
+.user-css-followers-counter-number a {
+   font-size: 18px;
+}
+/* Font Styling Homepage Followers */
+
+
+
+/* Icons */
+.user-css i {
+   color: rgba(255, 0, 142, .6);
+}
+
+
+.user-css-extended i {
+   color: rgba(0, 0, 0, .6);
+}
+/* Icons */
+
+
+
+/* Horizontal Rule Styling */
+.user-css hr {
+   border-top: 2px solid;
+   border-top-color: rgba(0, 0, 0, .6);
+}
+/* Horizontal Rule Styling */
+
+
+
+/* Scrollbar Styling */
+/*these lines allow you to make custom scroll bars for your world*/
+.user-css.page::-webkit-scrollbar { /*the scrollbar for inside the main container (not the scrollbar for the entire page*/
+   width: 7px;
+}
+
+.user-css.page::-webkit-scrollbar-track {  /*the track*/
+   background: rgba(255, 255, 255, .1);
+}
+
+.user-css.page::-webkit-scrollbar-thumb { /*the scrolly bit, aka thumb*/
+   background: rgba(15, 98, 146,  .3);
+   border-radius: 5px;
+}
+
+.user-css.page::-webkit-scrollbar-thumb:hover { /*the thumb when hovered over*/
+   background: rgba(22, 255, 0, .6);
+}
+
+.user-css-presentation .page::-webkit-scrollbar { /*the scrollbar for the comments container*/
+   width: 7px;
+}
+
+.user-css-presentation .page::-webkit-scrollbar-track { /*the track for the comments container*/
+   background: rgba(255, 255, 255, .1);
+}
+
+.user-css-presentation .page::-webkit-scrollbar-thumb { /*the thumb for the comments container*/
+   background: rgba(15, 98, 146,  .3);
+   border-radius: 5px;
+}
+
+.user-css-presentation .page::-webkit-scrollbar-thumb:hover { /*the thumb for the comments container when hovered over*/
+   background: rgba(22, 255, 0, .6);
+}
+
+.user-css-presentation div#world-navigation-sidebar::-webkit-scrollbar { /*the scrollbar for the navigation sidebar container*/
+   width: 7px;
+}
+
+.user-css-presentation div#world-navigation-sidebar::-webkit-scrollbar-track { /*the track for the navigation sidebar container*/
+   background: rgba(255, 255, 255, .1);
+}
+
+.user-css-presentation div#world-navigation-sidebar::-webkit-scrollbar-thumb { /*the thumb for the navigation sidebar container*/
+   background: rgba(15, 98, 146,  .3);
+   border-radius: 5px;
+}
+
+.user-css-presentation div#world-navigation-sidebar::-webkit-scrollbar-thumb:hover { /*the thumb for the navigation sidebar container when hovered over*/
+   background: rgba(22, 255, 0, .6);
+}
+/* Scrollbar Styling */
+/* --- 3D Rotating B5 --- */
+*,*:before,*:after {
+	box-sizing: border-box;
+}
+
+:after {
+	content: "";
+}
+
+section {
+  position: relative;
+  left: 100px;
+}
+
+h1 { 
+  margin:80px 0 10px 0;
+  font-size: 52px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #DC143C,
+	2px 2px 0px #DC143C,
+	3px 3px 0px #DC143C,
+	4px 4px 0px #DC143C;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.user-css-presentation,
+.page {
+  padding: 100px 0;
+	background: lightblue;
+  color: white;
+  max-width:640px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+  line-height:1.4;
+  font-smoothing: anti-aliased;
+}
+
+.user-css nav {
+  float: left;
+	position: relative;
+	top: 0;
+  left: 0;
+	background: transparent;
+}
+
+nav ul {
+	text-align: center;
+}
+
+nav ul li {
+	position: relative;
+  width: 70px;
+  cursor: pointer;
+	background: crimson;
+	text-transform: uppercase;
+	transition:all .4s ease-out;
+}
+
+nav ul li:after {
+	position: absolute;
+	background: white;
+	color: crimson;
+	top:0;
+	left: 70px;
+	width: 70px; height: 100%;
+  opacity:.5;
+  transform: perspective(400px) rotateY(90deg);
+	transform-origin: 0 100%;
+	transition:all .4s ease-out;
+}
+
+nav ul li:nth-child(1):after { 
+	content: "Home";
+	line-height: 88px;
+}
+nav ul li:nth-child(2):after { 
+	content: "About";
+	line-height: 88px;
+}
+nav ul li:nth-child(3):after { 
+	content: "Work";
+	line-height: 85px;
+}
+nav ul li:nth-child(4):after { 
+	content: "Say hi";
+	line-height: 70px;
+}
+
+nav ul li:hover {
+	transform: translateX(-70px);
+}
+
+nav ul li:hover:after {
+  opacity: 1;
+	transform: perspective(400px) rotateY(0deg) scale(1) ;
+}
+
+
+nav ul li > div {
+	display: inline-block;
+	padding: 25px 0;
+	background: transparent;
+}
+
+nav ul li div { position: relative; }
+
+.roof {
+	width: 0;
+	height: 0;
+	top:2px;
+	border-style: solid;
+	border-width: 0 21px 15px 21px;
+	border-color: transparent transparent #ffffff transparent;
+}
+
+.roof-edge {
+	position: absolute;
+	z-index: 20;
+	left: -17px;
+	top: 3px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 17px 12px 17px;
+	border-color: transparent transparent crimson transparent;
+}
+/*white triangle over red triangle*/
+.roof-edge:after {
+	position: absolute;
+	left: -14.5px;
+	top: 3px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 14.5px 10px 14.5px;
+	border-color: transparent transparent white transparent;
+}
+
+.front {
+	position: relative;
+	top: 3px;
+	width: 28.5px;
+	height: 20px;
+	margin: 0 auto;
+	background: white;
+}
+/*door*/
+.front:after {
+	position: absolute;
+	background: crimson;
+	width: 11px;
+	height: 13px;
+	bottom: 0;
+	left:9px;
+}
+
+/*/// About me ////*/
+
+.head {
+	width: 32px;
+	height: 35px;
+	background: white;
+	border-radius:8px;
+}
+/*mouth*/
+.head:after {
+	width: 4px;
+	height: 10px;
+	background: white;
+	position: absolute;
+	border-radius:4px 0 0 4px;
+	top:21px;
+	left: 14px;
+	transform:rotate(270deg);
+}
+
+.eyes {
+	width: 8px;
+	height: 5px;
+	border-radius: 50%;
+	position: absolute;
+	top: 10px;
+	left: 5px;
+	background: crimson;
+}
+/*right eye*/
+.eyes:after {
+	width: 8px;
+	height: 5px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 14px;
+	background: crimson;
+}
+
+.beard {
+	width: 32px;
+	height: 17px;
+	background: crimson;
+	border:2px solid white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-radius:0 0 8px 8px;
+}
+/*nose*/
+.beard:after {
+	position: absolute;
+	top:-2px;
+	left: 11px;
+	background: white;
+	width:6px;
+	height: 4px;
+	border-left:1px solid crimson;
+	border-right:1px solid crimson;
+}
+
+/*//work//*/
+
+.paper {
+	position: relative;
+	height:32px;
+	width: 29px;
+	background: white;
+	border:2px solid white;
+}
+
+/*window*/
+.paper:after {
+	position: absolute;
+	top:1px;
+	left: 0;
+	width: 25px;
+	height: 29px;
+	background: white;
+	border-top:4px solid crimson;
+}
+
+.lines {
+	position: absolute;
+	top: 36px;
+	left: 5px;
+	width: 11px;
+	box-shadow: 0 0 0 1px crimson;
+}
+
+.lines:after {
+	position: absolute;
+	top: 4px;
+	left: 3px;
+	width: 14px;
+	box-shadow: 0 0 0 1px crimson;
+}
+
+.lines:nth-child(2) {
+	position: absolute;
+	top: 44px;
+	left: 8px;
+	width: 11px;
+}
+
+.lines:nth-child(2):after {
+	position: absolute;
+	top: 4px;
+	left: -3px;
+	width: 11px;
+}
+
+.lines:nth-child(3) {
+	position: absolute;
+	top: 52px;
+	left: 8px;
+	width: 14px;
+}
+
+.lines:nth-child(3):after {
+	display: none;
+}
+
+/*//mail //*/
+
+.user-css,
+.mail-base {
+	position: relative;
+	width: 32px;
+	height: 18px;
+	background: white;
+}
+
+.user-css,
+.mail-top {
+	position: absolute;
+	z-index: 20;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	transform: rotate(180deg);
+	border-style: solid;
+	border-width: 0 16px 11px 16px;
+	border-color: transparent transparent crimson transparent;
+}
+
+.user-css,
+.mail-top:after {
+	position: absolute;
+	z-index: 20;
+	left: -16px;
+	top: 3px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 16px 9px 16px;
+	border-color: transparent transparent white transparent;
+}
+/* --- 3D Rotating Sidebar *B5* --- */
+
+/*
+/* Navigation Sidebar */
+.user-css-presentation,
+div#world-navigation-sidebar { /*the sidebar itself*/
+   background: url(https://www.worldanvil.com/uploads/images/dc60f779c8f30bfe0c2e6755d4ce4671.png);
+   background-clip: padding-box;
+   color: rgba(0, 0, 0, .0);
+   border-image-source: url(https://www.worldanvil.com/uploads/images/f10a0f95a3af2a89a0ce58ffa1086ceb.png);
+   border-image-slice: 20;
+   border-image-repeat: stretch;
+   border-width: 20px;
+   border-style: solid;
+   border-image-outset: 0px;
+   max-width: none;
+   width: 1500px;
+   left: -1200px;
+   padding-left: 1200px;
+   box-shadow: none;
+}
+
+.user-css-presentation div#world-navigation-sidebar i { /*icons in the sidebar*/
+   color: rgba(0, 0, 0, .6);
+}
+
+.user-css#world-navigation-sidebar[style^=display] { /*the sidebar while closed*/
+    left: -1480px!important; /*this is so mine slides in and out, instead of just appearing*/
+    display: block !important;
+    transition: left 1.8s; /*this is so mine slides in and out, instead of just appearing*/
+}
+
+#world-navigation-sidebar { /*sidebar position when open*/
+    display: block !important;
+    transition: left 1s; /*this is so mine slides in and out, instead of just appearing*/
+}
+
+.user-css-presentation .world-navigation-palette-trigger-inactive { /*the sidebar button when closed*/
+   left: 13px;
+   transition: left 1.8s;
+   background: rgba(255, 255, 255, ,15);
+   border: 3px solid rgba(93,56,145, .6);
+   border-radius: 3px;
+}
+  
+.user-css-presentation .world-navigation-palette-trigger-inactive i { /*the small icon in the sidebar button when closed*/
+   color: rgba(0, 0, 0, .0);
+   font-size: 0px;
+}
+
+.user-css-presentation .world-navigation-palette-trigger-active { /*the sidebar button when open*/
+   left: 293px;
+   transition: left 1s;
+   background: rgba(0, 0, 0, .15);
+   border: 3px solid rgba(93, 56, 145, .6);
+   border-radius: 3px;
+}
+
+.user-css-presentation .world-navigation-palette-trigger-active I { /*the small icon in the sidebar button when opened*/
+   color: rgba(0, 0, 0, 0);
+   font-size: 0px;
+}
+/* Navigation Sidebar */
+*/
+/* RSS Feed */
+ .user-css a.world-share-rss-feed-link {
+	background: rgba(0, 0, 0, 1);
+	border-color: #blue;
+	color: rgba(83, 115, 231, 1) !important;
+}
+
+/* World Title Box */
+
+.user-css .world-title { /*In order to design my own animated title for the world homepage, I first hid the actual title by reducing the opacity to 0. I then drew a gif of the animated title. Then, in the container where the title sits, I made the background the aforementioned gif. Boom bada bang animated title.*/
+  font-size: 125px;
+  text-shadow: 0px 5px 5px rgba(77, 69, 69, .0);
+  margin-top: 45px;
+  margin-bottom: 0px;
+  padding: 30px;
+  background: url(https://www.worldanvil.com/uploads/images/6dd90552b268b311135488c15cabc5c3.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgba(0, 0, 0, .0);
+
+}
+.user-css div.author-item.world-author { /*the world author text on the main page*/
+   padding-top: 0px;
+
+}
+/* World Title Box */
+
+
+
+/* World Row */
+/* unused in Perillel */
+.user-css.page-world-homepage div.world-content { /* a container surrounding all of the sections of the main world page */
+
+}
+
+/* timelines header */
+.user-css .timelines-list-header { /*hides the timelines header and makes the container effectively disappear*/
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
+
+}
+
+/*This code turns the article lists into a 2x2 grid (doesnt work for mobile) - unused in Perillel
+.user-css div.world-featured-articles ul.article-list li{
+  width: 50%;
+  float: left;
+}
+
+.user-css div.world-recent-articles ul.article-list li{
+   width: 50%;
+   float: left;
+}
+
+.user-css div.world-recent-articles h2{
+   float: left;
+}
+*/
+/* World Row */
+
+
+
+/* World Table of Contents */
+.user-css div.followers-counter div.panel { /*the followers panel on the main page*/
+   background: rgba(255, 255, 255, .15);
+   border: 4px solid rgba(42,36,56, .4);
+   box-shadow: 0px 3px 3px rgba(77, 69, 69, .2);
+   border-radius: 4px;
+   color: rgba(77, 69, 69, .7);
+   text-shadow: 0px 3px 3px rgba(0, 0, 0, .8);
+   font-family: Germania One, cursive;
+   font-size: 20px;
+}
+/* World Table of Contents */
+
+
+
+/* Homepage Map Panel */
+.user-css li.map-box.map-item{ /*the box surrounding the map and title*/
+   background: rgba(255, 255, 255, .15);
+   border: 4px solid rgba(0, 0, 0, .4);
+   box-shadow: 0px 3px 3px rgba(77, 69, 69, .2);
+   border-radius: 4px;
+   padding: 3px;
+}
+
+.user-css .map-box .img-responsive{ /*the image of the map*/
+   background: rgba(255, 255, 255, .6);
+}
+
+.user-css li.map-box.map-item div small{ /*a box surrounding just the title*/
+   font-family: IM Fell English SC, serif;
+   font-size: 23px;
+   color: rgba(77, 69, 69, .6);
+   text-shadow: 0px 2px 4px rgba(77, 69, 69, .3);
+   padding: 0px;
+}
+/* Homepage Map Panel */
+
+
+
+/* Spoilers */
+.user-css a.btn.btn-sm.btn-primary.spoiler-button[aria-expanded=true] { /*unsure exactly what this is doing*/
+   border-bottom: 1px solid;
+   transition: 0s;
+}
+
+.user-css a.btn.btn-sm.btn-primary.spoiler-button{ /*the button when the spoiler is toggled open*/
+   background: rgba(255, 255, 255, .15);
+   border: 4px solid rgba(0, 0, 0, .4);
+   border-radius: 0px;
+   border-bottom: 4px solid;
+   width: 100%;
+   height: auto;
+   text-shadow: 0px 3px 3px rgba(77, 69, 69, .8);
+   font-family: IM Fell English SC, serif;
+   font-size: 18px;
+   color: rgba(77, 69, 69, .6) !important;
+   margin-bottom: 0px;
+   white-space: normal;
+   transition: 1s; /*transition can be used to create psuedo-animations where the website will change between two states over a period of time. in this case, the state is when the spoiler opens or closes*/
+}
+
+.user-css a.btn.btn-sm.btn-primary.spoiler-button.collapsed{ /*the button when the spoiler is toggled closed*/
+   background: rgba(255, 255, 255, .15);
+   border: 4px solid rgba(0, 0, 0, .4);
+   border-bottom: 4px solid rgba(0, 0, 0, .4);
+   box-shadow: 0px 3px 3px rgba(77, 69, 69, .2);
+   border-radius: 0px;
+   width: 100%;
+   height: auto;
+   text-shadow: 0px 3px 3px rgba(77, 69, 69, .8);
+   font-family: Cinzel Decorative, cursive;
+   font-size: 18px;
+   color: rgba(77, 69, 69, .6) !important;
+   white-space: normal;
+   transition: 0.2s;
+}
+
+.user-css div.well.spoiler-content{ /*the content of the spoiler*/
+   background: rgba(255, 255, 255, .15);
+   border: 4px solid rgba(0, 0, 0, .4);
+   border-top: none;
+   box-shadow: 0px 3px 3px rgba(77, 69, 69, .2);
+   border-radius: 0px;
+   width: 100%;
+   height: auto;
+      font-family: Germania One, cursive;
+   color: rgba(0, 0, 0, .6) !important;
+font-size: 14px; 
+}
+/* Spoilers */
+
+
+
+/* Article Title Box */
+/*unused in Perillel*/
+.user-css div.col-md-12.article-title { /*a box surrounding article titles*/
+
+}
+/* Article Title Box */
+
+
+
+/* col-sm-x boxes */
+/*this is a way to globally affect all of your custom bbcode containers, depending on how you create them*/
+/*unused in Perillel*/
+.user-css div.col-sm-4 {
+
+}
+
+.user-css div.col-sm-6 {
+
+}
+
+.user-css div.col-sm-8 {
+
+}
+
+.user-css div.col-sm-12 {
+
+}
+
+.user-css div.col-sm-12 h5 {
+
+}
+/* col-sm-x boxes */
+
+
+
+/* Pseudo-elements */
+/* allows for customization of psuedo elements when paired with noted bbcode */
+/* bbcode: [:sidemarker] whatever you want [/] */ 
+/*
+.user-css .sidemarker {
+content: url();
+position: absolute;
+width: 3px;
+height: 100%;
+top: 0;
+right: 0;
+background: rgba(255, 255, 255, .8);
+box-shadow: whateveryou want the shadow to be;
+}
+*/
+/* Pseudo-elements */
+
+
+/* Quote Boxes */
+.user-css blockquote {
+   background: rgba(255, 255, 255, .15);
+   border: 4px solid rgba(0, 0, 0, .4);
+   box-shadow: 0px 3px 3px rgba(77, 69, 69, .2);
+   border-radius: 4px;
+   color: rgba(47, 88, 205, .7);
+   text-shadow: 0px 3px 3px rgba(77, 69, 69, .8);
+   font-family: Almendra SC, serif;
+   font-size: 20px;
+}
+
+
+.user-css blockquote h3 .text-center{
+   color: rgba(77, 69, 69, .7);
+   font-family: Macondo, cursive;
+   font-style: bold;
+   font-size: 26px;
+   line-height: 1.3;
+}
+/* Quote Boxes */
+
+
+/* Sidebar + Panels Boxes */
+.user-css div.panel {
+   color: rgba(0, 0, 0, .6);
+   text-shadow: 0px 3px 3px rgba(77, 69, 69, .8);
+   font-family: IM Fell English SC, serif;
+   background: rgba(255, 255, 255, .15);
+   box-shadow: 0px 3px 4px rgba(77, 69, 69, .4);
+   border: 3px solid rgba(85,52,131, .2);
+   border-radius: 9px;
+}
+/* Sidebar + Panels Boxes */
+
+
+/* Search Bar */
+/*The search bar is a complicated mess to work on. I recommend just copying what I have below and slowly working out what each block is doing.*/
+.user-css .search-form { /*where the search bar sits*/
+   margin: 0px;
+   margin-left: -93px;
+   margin-top: -39px;
+   left: auto;
+}
+
+
+.user-css .typeahead-input{ /*what is typed in the search bar*/
+   color: rgba(44,51,51, .6); 
+   font-family: Almendra SC, serif;
+   border: 3px solid rgba(200, 0, 0, .2); 
+   box-shadow: 0px 3px 3px rgba(77, 69, 69, .2); 
+   background: rgba(255,255,255, .15); 
+}
+
+.user-css .search-form:focus{  /*I dont even know*/
+   outline: unset;
+}
+
+.user-css .form-group:focus{  /*this either*/
+   outline: unset;
+}
+
+.user-css .typeahead-input:focus{  /*gives the search bar a shadow when typing inside it (focus)*/
+   outline: unset;
+   border-color: rgba(255, 0, 0, .5);
+}
+
+.user-css .typeahead-input::placeholder{ /*the search inside the search bar when empty*/
+   color: rgba(255, 0, 0, .6); 
+   opacity: 60%; 
+}
+
+.user-css #search-button.btn.btn-link { /*the magnifying glass*/
+   color: rgba(255, 237, 0, .6); 
+opacity: 60%;
+}
+
+.user-css .typeahead.dropdown-menu { /*the dropdown menu (and some associated text, I think?)*/
+   color: rgba(0, 0, 0, .6);
+   background: rgba(255, 255, 255, .15); 
+   box-shadow: 0px 3px 3px rgba(77, 69, 69, .2);
+   border: 4px solid rgba(0, 0, 0, .4);
+   border-radius: 3px;
+   border-color: rgba(245, 233, 207, .5); 
+}
+
+
+.user-css .typeahead .dropdown-item { /*individual dropdown items*/
+   color: rgba(77, 69, 69, .6); 
+}
+
+.user-css .typeahead a.dropdown-item{ /*removes the white background from hovered selections, can also be used to add effects*/
+   background: unset;
+}
+
+.user-css .typeahead .text-muted { /*the font color in the dropdown menu when not hovered*/
+   color: rgba(0, 0, 0, .5); 
+}
+
+.user-css .typeahead .active .text-muted { /*the font color in the dropdown menu when hovered*/
+   color: rgba(225, 10, 10, .6); 
+/* Search Bar */
+
+
+
+/* Back To World Bar */
+.user-css .backtoworld a {
+   font-family: IM Fell English SC, serif;
+   background: rgba(255, 255, 255, .15);
+   border: 3px solid rgba(0, 0, 0, .2);
+   box-shadow: 0px 3px 5px rgba(77, 69, 69, .8);
+   margin-left: 15px;
+   left: 0px;
+   top: 15px;
+   border-radius: 3px;
+   color: rgba(0, 0, 0, .7);
+   text-shadow: 0px 3px 3px rgba(77, 69, 69, .8);
+}
+
+
+.user-css .backtoworld a:hover {
+font-family: Cinzel Decorative, cursive;   
+color: rgba(0, 0, 0, .7);
+   background: rgba(255, 255, 255, .15);
+   border-color: rgba(0, 0, 0, .5);
+   text-shadow: 0px 3px 3px rgba(77, 69, 69, .5);
+}
+/* Back To World Bar */
+
+
+
+/* Twitch Icon */
+/*allows you to somewhat customize the twitch icon; same concept works on the other icons as well*/
+.user-css i.fab.fa-twitch { /*twitch icon normal*/
+   width: auto;
+   height: auto;
+   padding: 4px;
+   background: rgba(255, 255, 255, .15);
+   border: 3px solid rgba(85,52,131, .2);
+   box-shadow: 0px 3px 3px rgba(77, 69, 69, .2);
+   border-radius: 3px;
+   text-shadow: 0px 3px 3px rgba(77, 69, 69, .8);
+   color: rgba(0, 0, 0, .6);
+   animation: linksforfun 2.0s infinite;
+}
+
+
+.user-css i.fab.fa-twitch:hover {  /*twitch icon while hovered*/
+   border-color: rgba(0, 0, 0, .5);
+}
+/* Twitch Icon */
+
+
+
+/* Metadata + OrgTree */
+/*this large section takes care of everything in the metadata and organizational tree container at the bottome of the page*/
+/*side note: editing this section takes a lot of effort and youll see a lot of duplicate code*/
+/*side side note: if anyone knows an easier way to do all of this, please let me know*/
+.user-css-extended .nav-tabs a{ /*the metadata and orgtree tabs, before selected*/
+   margin: 5px;
+   background: rgba(255, 255, 255, .15);
+   border: 3px solid rgba(0, 0, 0, .4);
+   box-shadow: 0px 3px 3px rgba(77, 69, 69, .2);
+   border-radius: 3px;
+   color: rgba(0, 0, 0, .7);
+   text-shadow: 0px 3px 3px rgba(77, 69, 69, .8);
+   font-family: Germania One, cursive;
+}
+
+
+.user-css-extended .nav-tabs a:hover{ /*when the metadata and orgtree tabs are hovered over*/
+   margin: 5px;
+   background: rgba(255, 255, 255, .15);
+   border: 3px solid rgba(0, 0, 0, .5);
+   box-shadow: 0px 3px 3px rgba(77, 69, 69, .5);
+   border-radius: 3px;
+   color: rgba(0, 0, 0, .7);
+   text-shadow: 0px 3px 3px rgba(77, 69, 69, .8);
+   font-family: Macondo, cursive;
+}
+
+
+.user-css-extended .nav-tabs .active a{ /*when the tabs are active and not hovered over*/
+   margin: 5px;
+   background: rgba(255, 255, 255, .15);
+   border: 3px solid rgba(0, 0, 0, .5);
+   box-shadow: 0px 3px 3px rgba(77, 69, 69, .5);
+   border-radius: 3px;
+   color: rgba(0, 0, 0, .7);
+   text-shadow: 0px 3px 3px rgba(77, 69, 69, .8);
+   font-family: Germania One, cursive;
+}
+
+
+.user-css-extended .nav-tabs .active a:focus{ /*when the tabs are active and focused(??)*/
+   margin: 5px;
+   background: rgba(255, 255, 255, .15);
+   border: 3px solid rgba(0, 0, 0, .5);
+   box-shadow: 0px 3px 3px rgba(77, 69, 69, .5);
+   border-radius: 3px;
+   color: rgba(0, 0, 0, .7);
+   text-shadow: 0px 3px 3px rgba(77, 69, 69, .8);
+   font-family: IM Fell English SC, serif;
+}
+
+
+.user-css-extended .nav-tabs .active a:hover{ /*when the tabs are active and hovered over*/
+   margin: 5px;
+   background: rgba(255, 255, 255, .3);
+   border: 3px solid rgba(0, 0, 0, .5);
+   box-shadow: 0px 3px 3px rgba(77, 69, 69, .5);
+   border-radius: 3px;
+   color: rgba(0, 0, 0, .7);
+   text-shadow: 0px 3px 3px rgba(77, 69, 69, .8);
+   font-family: Almendra SC, serif;
+}
+
+.user-css-extended .tab-content .col-md-12 .row{ /*the metadata and organization tree box*/
+   margin: 5px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   background: rgba(255, 255, 255, .15);
+   border: 4px solid rgba(0, 0, 0, .4);
+   box-shadow: 0px 3px 3px rgba(77, 69, 69, .2);
+   border-radius: 4px;
+   color: rgba(0, 0, 0, .7);
+   text-shadow: 0px 3px 3px rgba(77, 69, 69, .8);
+   font-family: Germania One, cursive;
+}
+/* Metadata + OrgTree */
+
+
+
+/* Comments */
+.user-css-extended h2 {  /*the word comments*/
+   margin: 5px;
+   color: rgba(0, 0, 0, .7);
+   text-shadow: 0px 3px 3px rgba(77, 69, 69, .8);
+   font-family: Almendra SC, serif;
+}
+
+/* unused for Perillel*/
+.user-css-extended .col-md-8 {  /*a box that surrounds all the comments + the leave comment button*/
+
+}
+
+.user-css-extended .form-control { /*the comment form box*/
+   margin: 5px;
+   background: rgba(255, 255, 255, .15);
+   border: 4px solid rgba(0, 0, 0, .4);
+   box-shadow: 0px 3px 3px rgba(77, 69, 69, .2);
+   border-radius: 4px;
+   color: rgba(0, 0, 0, .7);
+   text-shadow: 0px 3px 3px rgba(77, 69, 69, .8);
+   font-family: Germania One, cursive;
+}
+
+.user-css-extended .comment-box { /*the actual comments left by people*/
+   margin: 5px;
+   background: rgba(255, 255, 255, .15);
+   border: 4px solid rgba(0, 0, 0, .4);
+   box-shadow: 0px 3px 3px rgba(77, 69, 69, .2);
+   border-radius: 4px;
+   color: rgba(0, 0, 0, .7);
+   text-shadow: 0px 3px 3px rgba(77, 69, 69, .8);
+   font-family: Cinzel Decorative, cursive;
+}
+
+.user-css-extended .btn-primary { /*the leave comment button when not hovered over*/
+   margin: 5px;
+   margin-bottom: 15px;
+   background: rgba(255, 255, 255, .15);
+   border: 4px solid rgba(0, 0, 0, .4);
+   box-shadow: 0px 3px 3px rgba(77, 69, 69, .2);
+   border-radius: 4px;
+   color: rgba(0, 0, 0, .8) !important;
+   text-shadow: 0px 3px 3px rgba(77, 69, 69, .8);
+   font-family: IM Fell English SC, serif;
+}
+
+.user-css-extended .btn-primary:hover { /*the leave comment button when hovered over*/
+   margin: 5px;
+   margin-bottom: 15px;
+   background: rgba(255, 255, 255, .15);
+   border: 4px solid rgba(0, 0, 0, .5);
+   box-shadow: 0px 3px 3px rgba(77, 69, 69, .2);
+   border-radius: 4px;
+   color: rgba(0, 0, 0, .8) !important;
+   text-shadow: 0px 3px 3px rgba(77, 69, 69, .8);
+   font-family: Almendra SC, serif;
+}
+/* Comments */
+
+
+
+/* Article Panel */
+/*these are the boxes that appear in your featured article section on your main page*/
+.user-css div.article-panel {  /*the box itself*/
+   margin: 5px;
+   background: rgba(255, 255, 255, .15);
+   border: 4px solid rgba(0, 0, 0, .4);
+   box-shadow: 0px 3px 3px rgba(77, 69, 69, .2);
+   border-radius: 4px;
+   color: rgba(0, 0, 0, .7);
+   text-shadow: 0px 3px 3px rgba(77, 69, 69, .8);
+   font-family: Germania One, cursive;
+}
+
+.user-css .article-panel .details h5{ /*the title (only need to change color with these next few as far as I can tell)*/
+   color: rgba(0, 0, 0, .7);
+}
+
+.user-css .article-panel .details .subheading{ /*type of article*/
+   color: rgba(0, 0, 0, .7);
+}
+
+.user-css .article-panel .details .subheading .date{ /*date published*/
+   color: rgba(0, 0, 0, .7);
+}
+/* Article Panel */
+
+
+
+/* Follower Page */
+.user-css.page-followers .nav-strip { /*the large go to world homepage bar*/
+   background: unset;
+   border: unset;
+   box-shadow: unset;
+   border-radius: unset;
+   color: rgba(0, 0, 0, .7);
+   text-shadow: 0px 3px 3px rgba(77, 69, 69, .8);
+   font-family: Almendra SC, serif;
+}
+
+.user-css.page-followers .nav-strip a:hover{ /*the words go to world homepage when hovered over*/
+   font-size: 16px;
+}
+
+
+
+.user-css.page-followers .follower-box{ /*the box with with the followers name and picture*/
+   background: rgba(255, 255, 255, .15);
+   border: 4px solid rgba(0, 0, 0, .4);
+   box-shadow: 0px 3px 3px rgba(77, 69, 69, .2);
+   border-radius: 4px;
+   color: rgba(0, 0, 0, .7);
+   text-shadow: 0px 3px 3px rgba(77, 69, 69, .8);
+   font-family: Cinzel Decorative, cursive;
+   font-size: 20px;
+}
+/* Follower Page */
+
+
+
+/* Tooltip */
+/*honestly, i have no idea how this actually works. i just keep trying stuff until eventually it looks good. forgive me.*/
+.user-css .tooltip.top .tooltip-arrow,
+.user-css-extended .tooltip.top .tooltip-arrow,
+.user-css-worldmenu .tooltip.top .tooltip-arrow {
+   border-top-color: rgba(83, 127, 221, .6);
+}
+
+.user-css .tooltip.left .tooltip-arrow,
+.user-css-extended .tooltip.left .tooltip-arrow,
+.user-css-worldmenu .tooltip.left .tooltip-arrow {
+   border-top-color: rgba(83, 127, 221, .6);
+}
+
+.user-css .tooltip.bottom .tooltip-arrow,
+.user-css-extended .tooltip.bottom .tooltip-arrow,
+.user-css-worldmenu .tooltip.bottom .tooltip-arrow {
+   border-top-color: rgba(83, 127, 221, .6);
+}
+	
+.user-css .tooltip.right .tooltip-arrow,
+.user-css-extended .tooltip.right .tooltip-arrow,
+.user-css-worldmenu .tooltip.right .tooltip-arrow {
+   border-top-color: rgba(83, 127, 221, .6);
+}
+
+.user-css .tooltip .tooltip-inner,
+.user-css-extended .tooltip .tooltip-inner,
+.user-css-worldmenu .tooltip .tooltip-inner {
+   background: rgba(255, 255, 255, 1);
+   border-color: rgba(83, 127, 221, .0);
+   border: solid 2px;
+   color: rgba(0, 0, 0, .7);
+   font-size: 20px;
+   font-family: IM Fell English SC, serif;
+}
+
+.user-css .text-abbreviation {
+   border: 1px rgba(0, 0, 0, .6) solid;
+   padding-left: 2px;
+   padding-right: 2px;
+   color: rgba(83, 115, 231, .2);
+}
+
+.user-css-presentation .tooltipster-box {
+   background: rgba(255, 255, 255, .8) !important;
+   border-color: rgba(0, 0, 0, .4) !important;
+   border: solid 2px!important;
+   color: black !important;
+   }
+
+.user-css-presentation .tooltipster-content {
+   color: rgba(225,225,225,1) !important;
+   font-family: IM Fell English SC, serif;
+   font-size: 16px;
+   line-height: 1.3;
+}
+
+.user-css-presentation .tooltipster-arrow-border {
+   border-top-color: rgba(0, 0, 0, .4) !important;
+}
+/* Tooltip */
+
+
+
+/* Map Page */
+/* - - this all changes the look of the map page specifically, since it is completely separate from the rest of the css -_- */
+.map-context-.user-css{ /*the map page background*/
+   background: url(https://www.worldanvil.com/uploads/images/6bfdcca3b751aa159179c14e14ff158a.png);
+}
+
+.user-css-map-sidebar { /*the sidebar for the map page. to be honest, this is a mess but i couldnt be bothered to simplify this anymore. the map page doesnt use that much code anyways.*/
+   position: fixed;
+   background: url(https://www.worldanvil.com/uploads/images/4a7d078e35a3db77aeaf5cdbd0031e2e.png);
+   background-size: 600px;
+   background-clip: padding-box;
+   background-position: center;
+   background-repeat: repeat;
+   animation: background-desktop 10s linear infinite;
+   border-image-source: url(https://www.worldanvil.com/uploads/images/f10a0f95a3af2a89a0ce58ffa1086ceb.png);
+   border-image-slice: 20;
+   border-image-repeat: stretch;
+   border-width: 20px;
+   border-style: solid;
+   border-image-outset: 0px;
+   max-width: none!important;
+   width: 1500px;
+   padding-left: 980px;
+   padding-right: 20px;
+   padding-top: 50px;
+   box-shadow: rgba(77, 69, 69, .4);
+   z-index: 1000!important;
+   left: -980px;
+   transition: .6s; /*adds a transition between open and closed*/
+}
+
+.user-css-map-sidebar.active { /*adds a transition between closed to open*/
+   transition: 1s;
+}
+
+.user-css-map-sidebar hr {
+   border-color: rgba(255,1,1, .6);
+}
+
+.user-css-map-sidebar h3.world-world {
+   font-family: IM Fell English SC, serif;
+   font-size: 38px;
+   color: rgba(0, 0, 0, .6);
+   text-shadow: 0px 5px 5px rgba(77, 69, 69, .4);
+}
+
+.user-css-map-sidebar h1.map-title {
+   font-family: Germania One, cursive;
+   font-size: 52px;
+   color: rgba(0, 0, 0, .6);
+   text-shadow: 0px 5px 5px rgba(77, 69, 69, .4);
+}
+/* Map Page */
+
+/* Fancy border */
+
+/* … requires some special BBCODE to function - see https://www.worldanvil.com/w/perillel-zogmaddog/a/grady-s-hill-landmark?preview=true spans fancy_border … */
+/*The BBCODE I used
+[row]
+[container:col-sm-1]
+[/container]
+[container:fancy_border_box]
+[container:fancy_border_content]
+Wir feiern Endzeit!
+[section:fancy_border_top]
+
+[/section]
+[section:fancy_border_left]
+
+[/section]
+[section:fancy_border_right]
+
+[/section]
+[section:fancy_border_bottom]
+
+[/section]
+[/container]
+[/container]
+[container:col-sm-1]
+[/container]
+[/row]
+*/
+
+.user-css div.fancy_border_content {
+  width: 83.33333333%;
+  height: inherit;
+  overflow: hidden;
+  padding: 30px;
+}
+
+.user-css span.fancy_border_top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  content: &quot; &quot; ;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: rgba(255, 255, 255, .6);
+  animation: topanimation 8s linear infinite;
+  box-shadow: 0px 0px 10px rgba(77, 69, 69, .6);
+}
+
+.user-css .fancy_border_top:before {
+
+}
+
+.user-css .fancy_border_bottom {
+  position: absolute;
+  top: auto;
+  bottom: 0px;
+  left: 0;
+  display: block;
+  box-sizing: border-box;
+  transform: rotate(180deg);
+  content: quot; quot; ;
+  width: 100%;
+  height: 3px;
+  background: rgba(255, 255, 255, .6);
+  animation: bottomanimation 8s linear infinite;
+  box-shadow: 0px 0px 10px rgba(77, 69, 69, .6);
+}
+
+.user-css .fancy_border_bottom:before {
+
+}
+
+.user-css .fancy_border_left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  transform: rotate(0deg);
+  content:  quot; quot; ;
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background: rgba(255, 255, 255, .6);
+  animation: leftanimation 8s linear infinite;
+  box-shadow: 0px 0px 10px rgba(77, 69, 69, .6);
+}
+
+.user-css .fancy_border_left:before {
+
+}
+
+.user-css .fancy_border_right {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: 0% 0%;
+  display: block;
+  box-sizing: border-box;
+  transform: rotate(180deg);
+  content: quot; quot; ;
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background: rgba(255, 255, 255, .6);
+  animation: rightanimation 8s linear infinite;
+  box-shadow: 0px 0px 10px rgba(77, 69, 69, .6);
+}
+
+.user-css .fancy_border_right:before {
+
+}
+
+@keyframes topanimation {
+  0% {
+  transform:scaleX(0);
+  transform-origin: left;
+  }
+  50%
+  {
+    transform:scaleX(1);
+  transform-origin: left;
+  }
+  50.1%
+  {
+    transform:scaleX(1);
+  transform-origin: right;
+   
+  }
+  100%
+  {
+    transform:scaleX(0);
+  transform-origin: right;
+    
+    }
+}
+
+@keyframes bottomanimation {
+  0% {
+  transform:scaleX(0);
+  transform-origin: right;
+  }
+  50%
+  {
+    transform:scaleX(1);
+  transform-origin: right;
+  }
+  50.1%
+  {
+    transform:scaleX(1);
+  transform-origin: left;
+    
+  }
+  100%
+  {
+    transform:scaleX(0);
+  transform-origin: left;
+    
+  }
+}
+
+@keyframes leftanimation {
+  0% {
+  transform:scaleY(0);
+  transform-origin: bottom;
+  }
+  50%
+  {
+    transform:scaleY(1);
+  transform-origin: bottom;
+  }
+  50.1%
+  {
+    transform:scaleY(1);
+  transform-origin: Top;
+    
+  }
+    100%
+  {
+    transform:scaleY(0);
+  transform-origin: top;
+    
+  }
+} 
+@keyframes rightanimation {
+  0% {
+  transform:scaleY(0);
+  transform-origin: top;
+  }
+  50%
+  {
+    transform:scaleY(1);
+  transform-origin: top;
+  }
+  50.1%
+  {
+    transform:scaleY(1);
+  transform-origin: bottom;
+
+   }
+  100%
+  {
+    transform:scaleY(0);
+  transform-origin: bottom;
+    
+  }
+} 
+/* Fancy border */
+
+/* -------   Global   ------- */
+
+
+
+/* ------   Mobile   ------ */
+/*creating a separate mobile section of your code gives you the option of optimizing your world for mobile viewing.*/
+/*normally youd want the mobile section to be first, since you are expecting most mobile users to be using their cellular data*/
+/*in the case of this css, i designed it so that everything between the desktop and mobile version is interchangable. all i had to do was update the size of fonts and some images*/
+/*if it doesnt load right away, it wont break the mobile viewing experience, it will just look a little big*/
+
+
+/*Only affects phones (small screens)*/
+@media only screen and (max-width: 500px) {
+	
+/*Page + Article Background*/
+.user-css-presentation { /*this affects the overall background of the world*/
+background: url(https://www.worldanvil.com/uploads/images/9c0fe6fd01db12b7fc5c2914e34d4ebf.png);
+background-size: 120%;
+background-attachment: fixed;  /*this locks the image on the screen; it wont scroll*/
+}
+
+ .user-css.page,
+.user-css-extended .page { /*this affects the large page container*/
+    background: url(https://www.worldanvil.com/uploads/images/26f8ebad07725f11e40772abaf386bc6.png);
+   background-size: 300px;
+   background-clip: padding-box;
+   background-position: center;
+   background-repeat: repeat;
+   animation: background-mobile 10s linear infinite;
+    box-shadow: 0px 0px 0px;
+   overflow: auto;
+   overflow-x: hidden;
+   max-height: 500px;
+   padding: 50px;
+   border-image-source: url(https://www.worldanvil.com/uploads/images/f10a0f95a3af2a89a0ce58ffa1086ceb.png);
+   border-image-slice: 20;
+   border-image-repeat: stretch;
+   border-width: 20px;
+   border-style: solid;
+   border-image-outset: 0px;
+   }
+/* Page + Article Background */
+
+/* Font Styling Global */
+.user-css {
+   font-size: 14px;
+}
+
+
+.user-css-extended {
+   font-size: 14px;
+   line-height: 1.2;
+}
+/* Font Styling Global */
+
+
+
+/* Font Styling H1 */
+.user-css h1 {
+   font-size: 35px;
+   line-height: 1.3;
+   margin-top: 30px;
+}
+
+
+.user-css-extended h1 {
+   font-size: 35px;
+   line-height: 1.3;
+   margin-top: 30px;
+}
+/* Font Styling H1 */
+
+
+
+/* Font Styling H2 */
+.user-css h2 {
+   font-size: 28px;
+   margin-bottom: 3px;
+   line-height: 1.2;
+   margin-top: 10px;
+}
+
+
+.user-css-extended h2 {
+   font-size: 28px;
+   margin-bottom: 3px;
+   line-height: 1.2;
+   margin-top: 10px;
+}
+/* Font Styling H2 */
+
+
+
+/* Font Styling H3 */
+.user-css h3 {
+   font-size: 21px;
+   margin-bottom: 3px;
+   margin-top: 10px;
+}
+
+
+.user-css-extended h3 {
+   font-size: 21px;
+   margin-bottom: 3px;
+   margin-top: 10px;
+}
+/* Font Styling H3 */
+
+
+
+/* Font Styling H4 */
+.user-css h4 {
+   font-size: 18px;
+}
+
+
+.user-css-extended h4 {
+   font-size: 18px;
+}
+/* Font Styling H4 */
+
+
+
+/* Font Styling H5 */
+.user-css h5 {
+   font-size: 14px;
+}
+
+
+.user-css-extended h5 {
+   font-size: 14px;
+}
+/* Font Styling H5 */
+
+
+/* Spans */   /*dont remember what is considered span but I wrote it for a reason*/
+.user-css span {
+font-size: 14px;
+}
+
+
+.user-css-extended span {
+   font-size: 14px;
+}
+/* Spans */
+
+
+
+/* Font Styling Links */
+.user-css a {
+   font-size: 14px;
+}
+
+.user-css-extended a {
+   font-size: 14px;
+}
+/* Font Styling Links */
+
+
+
+/* Scrollbar Styling */
+.user-css.page::-webkit-scrollbar {
+   width: 4px;
+}
+.user-css.page::-webkit-scrollbar-thumb {
+   border-radius: 2px;
+}
+.extendedb0dy-comments::-webkit-scrollbar {
+   width: 4px;
+}
+.extendedb0dy-comments::-webkit-scrollbar-thumb {
+   border-radius: 2px;
+}
+/* Scrollbar Styling */
+
+
+/* Navigation Sidebar */
+.user-css-presentation div#world-navigation-sidebar {  /*hides the sidebar*/
+   visibility: hidden;
+}
+/* Navigation Sidebar */
+}
+/*End phone adjustments*/
+/*
+/* ------   Mobile   ------ */
+/*=========================================---------------------------========================---------------------------============================================*/
+/*---------------------------------==--------------------------------- EXPERIMENTAL CSS BELOW -------------------------------==--------------------------------------*/
+/*========================================----------------------------========================---------------------------============================================*/
+/* --- Box w/Blk Border + Green Margin --- */
+.user-css p {
+  border: 2px solid black;
+  outline: #4CAF50 solid 10px;
+  margin: auto;  
+  padding: 20px;
+  text-align: center;
+}
+
+/**/
+
+/* --- CSS Palette Save Button --- */
+/*.user-css-presentation button#css-palette-save.btn.btn-block.d-block.btn.primary {
+color: #;
+font-family: Macondo, cursive;
+font-size: 14px;
+background: #;
+padding: 6px 12px;
+}
+
+---------------
+
+---------------
+/* ------------------------- */
+/* --- CSS Sidebars --- */
+/* ----------------------- */
+
+/* --- 3D Rotating B5 --- */
+
+*,*:before,*:after {
+	box-sizing: border-box;
+}
+
+:after {
+	content: "";
+}
+
+section {
+  position: relative;
+  left: 100px;
+}
+
+h1 { 
+  margin:80px 0 10px 0;
+  font-size: 52px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #DC143C,
+	2px 2px 0px #DC143C,
+	3px 3px 0px #DC143C,
+	4px 4px 0px #DC143C;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+body {
+  padding: 100px 0;
+	background: lightblue;
+  color: white;
+  max-width:640px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+  line-height:1.4;
+  font-smoothing: anti-aliased;
+}
+
+nav {
+  float: left;
+	position: relative;
+	top: 0;
+  left: 0;
+	background: transparent;
+}
+
+nav ul {
+	text-align: center;
+}
+
+nav ul li {
+	position: relative;
+  width: 70px;
+  cursor: pointer;
+	background: crimson;
+	text-transform: uppercase;
+	transition:all .4s ease-out;
+}
+
+nav ul li:after {
+	position: absolute;
+	background: white;
+	color: crimson;
+	top:0;
+	left: 70px;
+	width: 70px; height: 100%;
+  opacity:.5;
+  transform: perspective(400px) rotateY(90deg);
+	transform-origin: 0 100%;
+	transition:all .4s ease-out;
+}
+
+nav ul li:nth-child(1):after { 
+	content: "Home";
+	line-height: 88px;
+}
+nav ul li:nth-child(2):after { 
+	content: "About";
+	line-height: 88px;
+}
+nav ul li:nth-child(3):after { 
+	content: "Work";
+	line-height: 85px;
+}
+nav ul li:nth-child(4):after { 
+	content: "Say hi";
+	line-height: 70px;
+}
+
+nav ul li:hover {
+	transform: translateX(-70px);
+}
+
+nav ul li:hover:after {
+  opacity: 1;
+	transform: perspective(400px) rotateY(0deg) scale(1) ;
+}
+
+
+nav ul li > div {
+	display: inline-block;
+	padding: 25px 0;
+	background: transparent;
+}
+
+nav ul li div { position: relative; }
+
+.roof {
+	width: 0;
+	height: 0;
+	top:2px;
+	border-style: solid;
+	border-width: 0 21px 15px 21px;
+	border-color: transparent transparent #ffffff transparent;
+}
+
+.roof-edge {
+	position: absolute;
+	z-index: 20;
+	left: -17px;
+	top: 3px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 17px 12px 17px;
+	border-color: transparent transparent crimson transparent;
+}
+/*white triangle over red triangle*/
+.roof-edge:after {
+	position: absolute;
+	left: -14.5px;
+	top: 3px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 14.5px 10px 14.5px;
+	border-color: transparent transparent white transparent;
+}
+
+.front {
+	position: relative;
+	top: 3px;
+	width: 28.5px;
+	height: 20px;
+	margin: 0 auto;
+	background: white;
+}
+/*door*/
+.front:after {
+	position: absolute;
+	background: crimson;
+	width: 11px;
+	height: 13px;
+	bottom: 0;
+	left:9px;
+}
+
+/*/// About me ////*/
+
+.head {
+	width: 32px;
+	height: 35px;
+	background: white;
+	border-radius:8px;
+}
+/*mouth*/
+.head:after {
+	width: 4px;
+	height: 10px;
+	background: white;
+	position: absolute;
+	border-radius:4px 0 0 4px;
+	top:21px;
+	left: 14px;
+	transform:rotate(270deg);
+}
+
+.eyes {
+	width: 8px;
+	height: 5px;
+	border-radius: 50%;
+	position: absolute;
+	top: 10px;
+	left: 5px;
+	background: crimson;
+}
+/*right eye*/
+.eyes:after {
+	width: 8px;
+	height: 5px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 14px;
+	background: crimson;
+}
+
+.beard {
+	width: 32px;
+	height: 17px;
+	background: crimson;
+	border:2px solid white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-radius:0 0 8px 8px;
+}
+/*nose*/
+.beard:after {
+	position: absolute;
+	top:-2px;
+	left: 11px;
+	background: white;
+	width:6px;
+	height: 4px;
+	border-left:1px solid crimson;
+	border-right:1px solid crimson;
+}
+
+/*//work//*/
+
+.paper {
+	position: relative;
+	height:32px;
+	width: 29px;
+	background: white;
+	border:2px solid white;
+}
+
+/*window*/
+.paper:after {
+	position: absolute;
+	top:1px;
+	left: 0;
+	width: 25px;
+	height: 29px;
+	background: white;
+	border-top:4px solid crimson;
+}
+
+.lines {
+	position: absolute;
+	top: 36px;
+	left: 5px;
+	width: 11px;
+	box-shadow: 0 0 0 1px crimson;
+}
+
+.lines:after {
+	position: absolute;
+	top: 4px;
+	left: 3px;
+	width: 14px;
+	box-shadow: 0 0 0 1px crimson;
+}
+
+.lines:nth-child(2) {
+	position: absolute;
+	top: 44px;
+	left: 8px;
+	width: 11px;
+}
+
+.lines:nth-child(2):after {
+	position: absolute;
+	top: 4px;
+	left: -3px;
+	width: 11px;
+}
+
+.lines:nth-child(3) {
+	position: absolute;
+	top: 52px;
+	left: 8px;
+	width: 14px;
+}
+
+.lines:nth-child(3):after {
+	display: none;
+}
+
+/*//mail //*/
+
+.mail-base {
+	position: relative;
+	width: 32px;
+	height: 18px;
+	background: white;
+}
+
+.mail-top {
+	position: absolute;
+	z-index: 20;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	transform: rotate(180deg);
+	border-style: solid;
+	border-width: 0 16px 11px 16px;
+	border-color: transparent transparent crimson transparent;
+}
+
+.mail-top:after {
+	position: absolute;
+	z-index: 20;
+	left: -16px;
+	top: 3px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 16px 9px 16px;
+	border-color: transparent transparent white transparent;
+}
+*/
+/* --- 3D Rotating B5 --- */
+
+/* --- B3 Hidden Sidebar --- */
+/* Sidebar */
+#sidebar-wrapper{
+  z-index:1;
+  position: absolute;
+  width:0;
+  height:100%;
+  overflow-y:hidden;
+  background: #5b4282;
+  opacity:0.9;
+	transition:all .5s;
+	display:flex;
+	align-items:center;
+}
+
+/* Main Content */
+#page-content-wrapper{
+  width: 100%;	
+  position: absolute;
+  padding:15px;
+	transition:all .5s;
+}
+
+#menu-toggle{
+	transition:all .3s;
+	font-size:2em;
+}
+/* Change the width of the sidebar to display it*/
+#wrapper.menuDisplayed #sidebar-wrapper{
+  width:250px;
+}
+
+#wrapper.menuDisplayed #page-content-wrapper{
+  padding-left:250px;
+}
+
+/* Sidebar styling */
+.sidebar-nav{
+  padding:0;
+  list-style:none; 
+	transition:all .5s;
+	width:100%;
+	text-align:center;
+}
+
+.sidebar-nav li{
+  line-height:40px;  
+	width:100%;
+	transition:all .3s;
+	padding:10px;
+}
+
+.sidebar-nav li a {
+  display:block;
+  text-decoration:none;
+  color:#ddd;
+}
+
+.sidebar-nav li:hover{
+  background:#846bab;
+}
+
+/* --- B3 Hidden Sidebar --- */
+
+/*
+/* --- WA Style B3 Simple Sidebar --- */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+/* Toggle Styles */
+
+#viewport {
+  padding-left: 250px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#content {
+  width: 100%;
+  position: relative;
+  margin-right: 0;
+}
+
+/* Sidebar Styles */
+
+#sidebar {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 250px;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #37474F;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#sidebar header {
+  background-color: #263238;
+  font-size: 20px;
+  line-height: 52px;
+  text-align: center;
+}
+
+#sidebar header a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+
+#sidebar header a:hover {
+  color: #fff;
+}
+
+#sidebar .nav{
+  
+}
+
+#sidebar .nav a{
+  background: none;
+  border-bottom: 1px solid #455A64;
+  color: #CFD8DC;
+  font-size: 14px;
+  padding: 16px 24px;
+}
+
+#sidebar .nav a:hover{
+  background: none;
+  color: #ECEFF1;
+}
+
+#sidebar .nav a i{
+  margin-right: 16px;
+}
+/*--- WA Style B3 SimpleSidebar --- */
+*/
+
+/*
+/* --- o --- */
+@import "https://designmodo.github.io/Flat-UI/dist/css/flat-ui.min.css";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";
+@import "https://daneden.github.io/animate.css/animate.min.css";
+/*-------------------------------*/
+/*           VARIABLES           */
+/*-------------------------------*/
+
+// BACKGROUND COLOR
+@bg-color: #583e7e;
+
+// TEXT COLOR
+@text-color: #fff;
+
+// SIDEBAR LINK COLOR VARIABLES
+@side-color-1: #1a1a1a;
+@side-color-2: darken(@side-color-3, 5%);
+@side-color-3: darken(@side-color-4, 5%);
+@side-color-4: @bg-color;
+@side-color-5: lighten(@side-color-4, 5%);
+@side-color-6: lighten(@side-color-5, 5%);
+@side-color-7: lighten(@side-color-6, 5%);
+@side-color-8: lighten(@side-color-7, 5%);
+@side-color-9: lighten(@side-color-8, 5%);
+
+// HAMBURGER COLOR
+@hamburger-color-closed: fadeout(@text-color, 30);
+@hamburger-color-open: @text-color;
+
+// WIDTH VARIABLES
+@width1: 220px;
+@width2: 100px;
+@full-width: 100%;
+
+// HEIGHT VARIABLES
+@full-height: 100%;
+
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+body,
+html {
+  height: @full-height;
+  background-color: @bg-color;
+}
+
+
+
+
+
+
+
+.nav {
+  .open>a {
+    background-color: transparent;
+    &:hover {
+      background-color: transparent;
+    }
+    &:focus {
+      background-color: transparent;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------*/
+/*           Wrappers            */
+/*-------------------------------*/
+
+#wrapper {
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  padding-left: 0;
+  transition: all 0.5s ease;
+}
+#wrapper.toggled {
+  padding-left: 220px;
+  #sidebar-wrapper {
+    width: @width1;
+  }
+  #page-content-wrapper {
+    margin-right: -220px;
+    position: absolute;
+  }
+}
+#sidebar-wrapper {
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  background: #1a1a1a;
+  height: @full-height;
+  left: 220px;
+  margin-left: -220px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: all 0.5s ease;
+  width: 0;
+  z-index: 1000;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+#page-content-wrapper {
+  padding-top: 70px;
+  width: @full-width;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------*/
+/*     Sidebar nav styles        */
+/*-------------------------------*/
+
+.sidebar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: @width1;
+  li {
+    display: inline-block;
+    line-height: 20px;
+    position: relative;
+    width: @full-width;
+    &:before {
+      background-color: #1c1c1c;
+      content: '';
+      height: @full-height;
+      left: 0;
+      position: absolute;
+      top: 0;
+      transition: width .2s ease-in;
+      width: 3px;
+      z-index: -1;
+    }
+    &:first-child {
+      a {
+        background-color: @side-color-1;
+        color: #ffffff;
+      }
+    }
+    &:nth-child(2) {
+      &:before {
+        background-color: @side-color-2;
+      }
+    }
+    &:nth-child(3) {
+      &:before {
+        background-color: @side-color-3;
+      }
+    }
+    &:nth-child(4) {
+      &:before {
+        background-color: @side-color-4;
+      }
+    }
+    &:nth-child(5) {
+      &:before {
+        background-color: @side-color-5;
+      }
+    }
+    &:nth-child(6) {
+      &:before {
+        background-color: @side-color-6;
+      }
+    }
+    &:nth-child(7) {
+      &:before {
+        background-color: @side-color-7;
+      }
+    }
+    &:nth-child(8) {
+      &:before {
+        background-color: @side-color-8;
+      }
+    }
+    &:nth-child(9) {
+      &:before {
+        background-color: @side-color-9;
+      }
+    }
+    &:hover {
+      &:before {
+        transition: width .2s ease-in;
+        width: @full-width;
+      }
+    }
+    a {
+      color: #dddddd;
+      display: block;
+      padding: 10px 15px 10px 30px;
+      text-decoration: none;
+    }
+  }
+  li.open {
+    &:hover {
+      before {
+        transition: width .2s ease-in;
+        width: @full-width;
+      }
+    }
+  }
+  .dropdown-menu {
+    background-color: #222222;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: @full-width;
+  }
+}
+.sidebar-nav li a:hover, .sidebar-nav li a:active, .sidebar-nav li a:focus, .sidebar-nav li.open a:hover, .sidebar-nav li.open a:active, .sidebar-nav li.open a:focus {
+  background-color: transparent;
+  color: #ffffff;
+  text-decoration: none;
+}
+.sidebar-nav>.sidebar-brand {
+  font-size: 20px;
+  height: 65px;
+  line-height: 44px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------*/
+/*       Hamburger-Cross         */
+/*-------------------------------*/
+
+.hamburger {
+  background: transparent;
+  border: none;
+  display: block;
+  height: 32px;
+  margin-left: 15px;
+  position: fixed;
+  top: 20px;
+  width: 32px;
+  z-index: 999;
+  &:hover {
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    outline: none;
+  }
+}
+.hamburger.is-closed {
+  &:before {
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-transition: all .35s ease-in-out;
+    color: #ffffff;
+    content: '';
+    display: block;
+    font-size: 14px;
+    line-height: 32px;
+    opacity: 0;
+    text-align: center;
+    width: @width2;
+  }
+  &:hover {
+    before {
+      -webkit-transform: translate3d(-100px,0,0);
+      -webkit-transition: all .35s ease-in-out;
+      display: block;
+      opacity: 1;
+    }
+    .hamb-top {
+      -webkit-transition: all .35s ease-in-out;
+      top: 0;
+    }
+    .hamb-bottom {
+      -webkit-transition: all .35s ease-in-out;
+      bottom: 0;
+    }
+  }
+  .hamb-top {
+    -webkit-transition: all .35s ease-in-out;
+    background-color: @hamburger-color-closed;
+    top: 5px;
+  }
+  .hamb-middle {
+    background-color: @hamburger-color-closed;
+    margin-top: -2px;
+    top: 50%;
+  }
+  .hamb-bottom {
+    -webkit-transition: all .35s ease-in-out;
+    background-color: @hamburger-color-closed;
+    bottom: 5px;
+  }
+}
+.hamburger.is-closed .hamb-top, .hamburger.is-closed .hamb-middle, .hamburger.is-closed .hamb-bottom, .hamburger.is-open .hamb-top, .hamburger.is-open .hamb-middle, .hamburger.is-open .hamb-bottom  {
+  height: 4px;
+  left: 0;
+  position: absolute;
+  width: @full-width;
+}
+.hamburger.is-open {
+  .hamb-top {
+    -webkit-transform: rotate(45deg);
+    -webkit-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);
+    background-color: @hamburger-color-open;
+    margin-top: -2px;
+    top: 50%;
+  }
+  .hamb-middle {
+    background-color: @hamburger-color-open;
+    display: none;
+  }
+  .hamb-bottom {
+    -webkit-transform: rotate(-45deg);
+    -webkit-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);
+    // background-color: #1a1a1a;
+    background-color: @hamburger-color-open;
+    margin-top: -2px;
+    top: 50%;
+  }
+  &:before {
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-transition: all .35s ease-in-out;
+    color: #ffffff;
+    content: '';
+    display: block;
+    font-size: 14px;
+    line-height: 32px;
+    opacity: 0;
+    text-align: center;
+    width: @width2;
+  }
+  &:hover {
+    before {
+      -webkit-transform: translate3d(-100px,0,0);
+      -webkit-transition: all .35s ease-in-out;
+      display: block;
+      opacity: 1;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------*/
+/*          Dark Overlay         */
+/*-------------------------------*/
+
+.overlay {
+    position: fixed;
+    display: none;
+    width: @full-width;
+    height: @full-height;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.4);
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SOME DEMO STYLES - NOT REQUIRED */
+body, html {background-color: @bg-color} body {h1,h2,h3,h4 {color:fadeout(@text-color, 10);}p, blockquote {color:fadeout(@text-color, 30);}a {color:fadeout(@text-color, 20);text-decoration:underline;&:hover {color:@text-color;}}}
+
+
+/* --- B3 Side-Nav --- */
+*/
+
+/*
+/* --- B3 Admin Sidebar --- */
+ 
+
+.nav-pills > li > a {
+   border-radius: 0;
+}
+
+#wrapper {
+   padding-left: 0;
+   -webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -o-transition: all 0.5s ease;
+   transition: all 0.5s ease;
+   overflow: hidden;
+}
+
+#wrapper.toggled {
+   padding-left: 250px;
+   overflow: hidden;
+}
+
+#sidebar-wrapper {
+   z-index: 1000;
+   position: absolute;
+   left: 250px;
+   width: 0;
+   height: 100%;
+   margin-left: -250px;
+   overflow-y: auto;
+   background: #000;
+   -webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -o-transition: all 0.5s ease;
+   transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+   width: 250px;
+}
+
+#page-content-wrapper {
+   position: absolute;
+   padding: 15px;
+   width: 100%;
+   overflow-x: hidden;
+}
+
+.xyz {
+   min-width: 360px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+   position: relative;
+   margin-right: 0px;
+}
+
+.fixed-brand {
+   width: auto;
+}
+/* Sidebar Styles */
+
+.sidebar-nav {
+   position: absolute;
+   top: 0;
+   width: 250px;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   margin-top: 2px;
+}
+
+.sidebar-nav li {
+   text-indent: 15px;
+   line-height: 40px;
+}
+
+.sidebar-nav li a {
+   display: block;
+   text-decoration: none;
+   color: #999999;
+}
+
+.sidebar-nav li a:hover {
+   text-decoration: none;
+   color: #fff;
+   background: rgba(255, 255, 255, 0.2);
+   border-left: red 2px solid;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+   text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+   height: 65px;
+   font-size: 18px;
+   line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+   color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+   color: #fff;
+   background: none;
+}
+
+.no-margin {
+   margin: 0;
+}
+
+@media (min-width: 768px) {
+   #wrapper {
+      padding-left: 250px;
+   }
+   .fixed-brand {
+      width: 250px;
+   }
+   #wrapper.toggled {
+      padding-left: 0;
+   }
+   #sidebar-wrapper {
+      width: 250px;
+   }
+   #wrapper.toggled #sidebar-wrapper {
+      width: 250px;
+   }
+   #wrapper.toggled-2 #sidebar-wrapper {
+      width: 50px;
+   }
+   #wrapper.toggled-2 #sidebar-wrapper:hover {
+      width: 250px;
+   }
+   #page-content-wrapper {
+      padding: 20px;
+      position: relative;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+   }
+   #wrapper.toggled #page-content-wrapper {
+      position: relative;
+      margin-right: 0;
+      padding-left: 250px;
+   }
+   #wrapper.toggled-2 #page-content-wrapper {
+      position: relative;
+      margin-right: 0;
+      margin-left: -200px;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      width: auto;
+   }
+}
+/* --- B3 Admin Sidebar --- */
+*/
+
+
+/* --- B5 clickable side menu --- */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");:root{--header-height: 3rem;--nav-width: 68px;--first-color: #4723D9;--first-color-light: #AFA5D9;--white-color: #F7F6FB;--body-font: 'Nunito', sans-serif;--normal-font-size: 1rem;--z-fixed: 100}*,::before,::after{box-sizing: border-box}body{position: relative;margin: var(--header-height) 0 0 0;padding: 0 1rem;font-family: var(--body-font);font-size: var(--normal-font-size);transition: .5s}a{text-decoration: none}.header{width: 100%;height: var(--header-height);position: fixed;top: 0;left: 0;display: flex;align-items: center;justify-content: space-between;padding: 0 1rem;background-color: var(--white-color);z-index: var(--z-fixed);transition: .5s}.header_toggle{color: var(--first-color);font-size: 1.5rem;cursor: pointer}.header_img{width: 35px;height: 35px;display: flex;justify-content: center;border-radius: 50%;overflow: hidden}.header_img img{width: 40px}.l-navbar{position: fixed;top: 0;left: -30%;width: var(--nav-width);height: 100vh;background-color: var(--first-color);padding: .5rem 1rem 0 0;transition: .5s;z-index: var(--z-fixed)}.nav{height: 100%;display: flex;flex-direction: column;justify-content: space-between;overflow: hidden}.nav_logo, .nav_link{display: grid;grid-template-columns: max-content max-content;align-items: center;column-gap: 1rem;padding: .5rem 0 .5rem 1.5rem}.nav_logo{margin-bottom: 2rem}.nav_logo-icon{font-size: 1.25rem;color: var(--white-color)}.nav_logo-name{color: var(--white-color);font-weight: 700}.nav_link{position: relative;color: var(--first-color-light);margin-bottom: 1.5rem;transition: .3s}.nav_link:hover{color: var(--white-color)}.nav_icon{font-size: 1.25rem}.show{left: 0}.body-pd{padding-left: calc(var(--nav-width) + 1rem)}.active{color: var(--white-color)}.active::before{content: '';position: absolute;left: 0;width: 2px;height: 32px;background-color: var(--white-color)}.height-100{height:100vh}@media screen and (min-width: 768px){body{margin: calc(var(--header-height) + 1rem) 0 0 0;padding-left: calc(var(--nav-width) + 2rem)}.header{height: calc(var(--header-height) + 1rem);padding: 0 2rem 0 calc(var(--nav-width) + 2rem)}.header_img{width: 40px;height: 40px}.header_img img{width: 45px}.l-navbar{left: 0;padding: 1rem 1rem 0 0}.show{width: calc(var(--nav-width) + 156px)}.body-pd{padding-left: calc(var(--nav-width) + 188px)}}
+/* --- B5 clickable side menu --- */
+
+
+
+/* --- B5 Animated Button w-transition --- */
+* {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eee
+}
+
+button {
+    padding: 16px 20px;
+    font-size: 1.2em;
+    width: 200px;
+    cursor: pointer;
+    border: 0px;
+    position: relative;
+    margin: 20px;
+    transition: all .25s ease;
+    background: rgba(116, 23, 231, 1);
+    color: #fff;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.load {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: inherit
+}
+
+.load::after {
+    content: '';
+    position: absolute;
+    height:100%;
+    width:100%;
+    animation: loading1 1s ease infinite;
+    z-index: 10;
+    background:rgba(255,255,255,0.25);
+}
+
+.load::before {
+     content: '';
+    position: absolute;
+    height:100%;
+    width:100%;
+    animation: loading1 1s ease-out infinite;
+    z-index: 5;
+    background:rgba(255,255,255,0.25);
+}
+
+@keyframes loading1 { 
+    0% {
+        transform: translate(0,100%);
+    }
+
+    100% {
+        transform: translate(0,-100%);
+    }
+}
+
+button.active {
+    transform: scale(.85)
+}
+
+button.activeLoading .loading {
+    visibility: visible;
+    opacity: 1
+}
+
+button .loading {
+    opacity: 0;
+    visibility: hidden
+}
+/* --- B5 Animated Button w-transition --- */
+*/
+
+/*
+/* --- Button w-Tooltip --- */
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-color:#DEB9C8;
+}
+.tooltip-container{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.tooltip{
+    position:absolute;
+    left:0px;
+    top:0px; 
+    background:#000;
+    color:#fff;
+    border-radius:10px;
+    max-width:250px; 
+    padding:10px 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    opacity:0;
+    transition:all 0.5s;
+    font-size:14px;
+}
+
+
+.tooltip:after{
+    position:absolute;
+    content:'';
+    height:20px;
+    width:20px;
+    background-color:#000;
+    top:-4px;
+    transform:rotate(45deg);
+    z-index:-10;
+}
+
+.onbutton{
+    width:150px;
+    height:40px;
+    border:none;
+    border-radius:5px;
+    background-color:#D77FA1;
+    color:#fff;
+    cursor:pointer;
+}
+
+.active{
+    opacity:1;
+}
+/* --- Button w-Tooltip --- */
+
+
+
+/* --- CSS Card w-Anim --- */
+*{
+    padding:0;
+    margin: 0;
+}
+
+body{
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+} 
+
+.card{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    background-color: #191919;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.card::before{
+    content: '';
+    width: 120px;
+    height: 600px;
+    left: 60px;  
+    top: -120px;
+    background: linear-gradient(#00e5ff,#b400fb);
+    position: absolute;
+    animation: animate 5s linear infinite;
+}
+
+.card::after{
+    content:'';
+    position: absolute;
+    background: #191919;
+    inset: 5px;
+    border-radius: 5px;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* --- CSS Card w-Anim --- */
+
+
+/*
+/* --- B4 Weather Widget --- */
+body {
+    color: #fff;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #CFD8DC;
+    background-repeat: no-repeat;
+}
+
+.card {
+    background-image: url("https://i.imgur.com/dpqZJV5.jpg");
+    background-size: cover;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 4px #9E9E9E;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.time-font {
+    font-size: 50px;
+}
+
+.sm-font {
+    font-size: 18px;
+}
+
+.med-font {
+    font-size: 28px;
+}
+
+.large-font {
+    font-size: 60px;
+}
+/* --- B4 Weather Widget --- */
+*/
+
+/*
+/* --- Animated Clock Widget --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif
+}
+
+.main {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: #ececec
+}
+
+.clock {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -4px -4px 12px rgba(255, 255, 255, 1), 4px 4px 12px rgba(121, 130, 160, 0.747)
+}
+
+#center {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    z-index: 20;
+    background: #ececec;
+    box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 1), inset 2px 2px 6px rgba(121, 130, 160, 0.747)
+}
+
+.seconds,
+.minutes,
+.hour {
+    position: absolute;
+    top: 50%
+}
+
+.seconds {
+    height: 4px;
+    width: 80%;
+    z-index: 10
+}
+
+.seconds #sec {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform: rotate(95deg)
+}
+
+.seconds #sec::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    right: 0;
+    background: #FF5722
+}
+
+.minutes {
+    height: 4px;
+    width: 76%
+}
+
+.minutes #min {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform: rotate(15deg)
+}
+
+.minutes #min::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    background: rgba(70, 70, 70, 0.35)
+}
+
+.hour {
+    height: 6px;
+    width: 60%
+}
+
+.hour #hour {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform: rotate(45deg)
+}
+
+.hour #hour::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    background: rgba(70, 70, 70, 0.35)
+}
+
+#time12,
+#time6 {
+    width: 5px;
+    height: 25px;
+    position: absolute;
+    background: rgba(70, 70, 70, 0.35)
+}
+
+#time3,
+#time9 {
+    width: 25px;
+    height: 5px;
+    position: absolute;
+    background: rgba(70, 70, 70, 0.35)
+}
+
+#time12 {
+    top: 0
+}
+
+#time3 {
+    top: 50%;
+    right: 0
+}
+
+#time6 {
+    bottom: 0
+}
+
+#time9 {
+    top: 50%;
+    left: 0
+}
+
+.switch {
+    position: absolute;
+    top: 20%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 1), inset 2px 2px 6px rgba(121, 130, 160, 0.747)
+}
+
+.switch button {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    font-size: 1.5em;
+    color: #FF5722;
+    background: transparent
+}
+
+.dark_mode {
+    background: #212121
+}
+
+.dark_mode #time12,
+.dark_mode #time3,
+.dark_mode #time6,
+.dark_mode #time9 {
+    background: #D0D3D4
+}
+
+.dark_mode #hour::before,
+.dark_mode #min::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: #D0D3D4
+}
+
+.dark_mode .switch {
+    box-shadow: -4px -4px 10px rgba(50, 50, 50, 0.4), inset 4px 4px 10px rgba(0, 0, 0, 0.4), 5px 5px 10px rgba(0, 0, 0, 0.4), inset -5px -5px 10px rgba(50, 50, 50, 0.4)
+}
+
+.dark_mode #center {
+    background: #212121;
+    box-shadow: -4px -4px 10px rgba(50, 50, 50, 0.4), inset 4px 4px 10px rgba(0, 0, 0, 0.4), 5px 5px 10px rgba(0, 0, 0, 0.4), inset -5px -5px 10px rgba(50, 50, 50, 0.4)
+}
+
+.dark_mode .clock {
+    box-shadow: -4px -4px 10px rgba(50, 50, 50, 0.4), inset 4px 4px 10px rgba(0, 0, 0, 0.4), 5px 5px 10px rgba(0, 0, 0, 0.4), inset -5px -5px 10px rgba(50, 50, 50, 0.4)
+}
+/* --- Animated Clock Widget --- */
+
+
+
+/* --- Card w-Linear Gradient Hover --- */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+ --background: linear-gradient(to left, #32f72b 0%, #aa5d60 100%);
+ width: 190px;
+ height: 254px;
+ padding: 5px;
+ border-radius: 1rem;
+ overflow: visible;
+ background: #f7ba2b;
+ background: var(--background);
+ position: relative;
+ z-index: 1;
+ cursor: pointer;
+}
+
+.card::after {
+ position: absolute;
+ content: "";
+ top: 30px;
+ left: 0;
+ right: 0;
+ z-index: -1;
+ height: 100%;
+ width: 100%;
+ transform: scale(0.8);
+ filter: blur(25px);
+ background: #f7ba2b;
+ background: var(--background);
+ transition: opacity .5s;
+}
+
+.card-info {
+ --color: #181818;
+ background: var(--color);
+ color: var(--color);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ height: 100%;
+ overflow: visible;
+ border-radius: .7rem;
+}
+
+.card .title {
+ font-weight: bold;
+ letter-spacing: .1em;
+}
+
+/*Hover*/
+.card:hover::after {
+ opacity: 0;
+}
+
+.card:hover .card-info {
+ color: #f7ba2b;
+ transition: color 1s;
+}
+/* --- Card w-Linear Gradient Hover --- */
+
+
+
+/* --- Perspective Transform On Hover --- */
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:#000;
+}
+
+.image-card {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 1rem;
+  width: 240px;
+  height: 320px;
+  padding: 8px;
+  border-radius: 1rem;
+  cursor:pointer;
+  background: url("https://picsum.photos/id/178/280/370");
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.perspective-left {
+  transform: perspective(1500px) rotateY(15deg);
+  transition: transform 1s ease 0s;
+}
+
+.perspective-left:hover {
+  transform: perspective(3000px) rotateY(5deg);
+}
+
+.perspective-right {
+  transform: perspective(1500px) rotateY(-15deg);
+  transition: transform 1s ease 0s;
+}
+
+.perspective-right:hover {
+  transform: perspective(3000px) rotateY(-5deg);
+}
+/* --- Perspective Transform On Hover --- */
+
+
+
+/* --- B5 Card Hinge Anim --- */
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Kalam&display=swap');
+
+/* Reseting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #222;
+}
+
+.container {
+    overflow: auto;
+}
+
+.cards {
+    overflow: auto;
+    min-height: 550px;
+}
+
+.card {
+    background: #3a3a3a;
+    background: linear-gradient(to right, #474747, #222);
+    min-width: 300px;
+    height: 380px;
+    border-radius: 10px;
+    box-shadow: -5px 5px 25px #0000009d;
+    padding: 20px;
+    border: none;
+    transition: all .3s ease-in-out;
+}
+
+.card .text-grey {
+    color: #ccc;
+    font-weight: 500;
+}
+
+.card .light-grey {
+    color: #aaa;
+    font-weight: 300;
+}
+
+.card .fs-5 {
+    font-size: 1.15rem !important;
+}
+
+.card a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.card .profile img {
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 5px 15px rgba(26, 25, 25, 0.329);
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card:not(:first-child) {
+    margin-left: -8rem;
+}
+
+.cards::-webkit-scrollbar {
+    height: 10px;
+}
+
+.cards::-webkit-scrollbar-track {
+    background: inherit;
+}
+
+.cards::-webkit-scrollbar-thumb {
+    background-color: #3a3a3a;
+    background: linear-gradient(to right, #ff002b, #002fff);
+    /* background: ; */
+    border-radius: 10px;
+}
+
+
+.card:hover,
+.card:focus-within {
+    transform: translateY(-1rem) rotateZ(5deg);
+}
+
+.card:hover~.card,
+.card:focus-within~.card {
+    transform: translateX(8rem);
+}
+
+.card .designation {
+    display: inline;
+    border-radius: 10px;
+    padding: 4px 10px;
+    border: 1px solid #ddd;
+}
+/* --- B5 Card Hinge Anim --- */
+*/
+
+/*
+/* --- B3 Accordian Collapse --- */
+body {
+	font-family: 'Calibri', 'TimesNewRomanPSMT';
+	font-size: 14px;
+	overflow-x: hidden !important;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+}
+
+a {
+	color: #658ad0;
+	transition: all 0.5s ease;
+}
+
+a:hover {
+	color: #3e6cc4;
+	text-decoration: none;
+}
+
+a:active {
+	outline: none;
+	text-decoration: none;
+}
+
+a:focus {
+	outline: none;
+	text-decoration: none;
+}
+
+button:focus {
+	outline: none;
+	text-decoration: none;
+}
+
+img {
+	line-height: 0;
+	transition: all 0.5s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.clear {
+	clear: both;
+	content: '';
+	display: block;
+	width: 100%;
+}
+
+.clear:after {
+	clear: both;
+	content: '';
+	display: block;
+	width: 100%;
+}
+
+.form-control:focus {
+	border-color: #3b0600;
+	outline: none;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.center {
+	text-align: center;
+}
+
+body {}
+
+@font-face {
+	font-family: 'Calibri';
+	
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+.tab_sec {
+	background: #F0FFF0 no-repeat center top;
+	padding: 85px 0px 50px 0;
+	min-height: 650px;
+	background-size:100%;
+}
+
+.tab_in_sec {
+	max-width: 775px;
+	width: 100%;
+	margin:66px auto;
+}
+
+.tab_in_sec .panel-default>.panel-heading {
+	padding: 0;
+}
+
+.tab_in_sec .panel-default>.panel-heading a {
+	display: block;
+	padding: 20px 15px;
+	font-size: 17px;
+	color: #4f4f4f;
+	text-transform: uppercase;
+	background: #fff;
+	border: solid 1px #ccc;
+	margin:10px 0;
+}
+
+.collapse.in {}
+
+.panel {
+	background: none;
+	border: none;
+}
+
+.panel-body {
+	background: #fff;
+	margin-top: 7px;
+	border: solid 1px #ccc;
+	padding: 40px 35px 25px 35px;
+}
+
+
+
+{
+	margin: 0px;
+	position: relative;
+	top: 14px;
+	border-color: #bfbfbf;
+}
+
+.tab_in_sec .panel-default>.panel-heading a {
+	background:#000;
+	color:#fff;
+}
+
+.tab_in_sec .panel-default>.panel-heading a.active {
+	background:#000;
+	color: #fff;
+}
+
+.tab_first {
+	background: none;
+	position: absolute;
+	top: 66px;
+	left: 320px;
+	width: 100%;
+}
+
+.tab_first .panel-heading {
+	background: none;
+	border-bottom: none;
+	box-shadow: none;
+	padding: 0px;
+}
+
+.tab_first .panel-heading {}
+
+.tab_sec {
+	position: relative;
+}
+
+.tab_first .panel-heading ul li {
+	display: inline-block;
+	text-align: center;
+}
+
+.tab_first .panel-heading ul li a {
+	padding: 15px 35px;
+	font-weight: bold;
+	background: #d82028;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.tab_first .panel-primary {
+	box-shadow: none;
+	padding-left: 30px;
+}
+
+.actives {
+	background: #d82028 !important;
+	color: #fff !important;
+}
+
+.panel-body p {
+	margin-bottom: 15px;
+}
+@media (min-width:1681px) and (max-width:1920px){
+   .tab_first {
+    left: 600px;
+} 
+}
+@media (min-width:1599px) and (max-width:1680px){
+   .tab_first {
+    left: 476px;
+} 
+}
+@media (min-width:1439px) and (max-width:1600px){
+   .tab_first {
+    left:430px;
+} 
+}
+@media (min-width:1367px) and (max-width:1440px){
+   .tab_first {
+    left:342px;
+} 
+}
+@media only screen and (max-width:1280px){
+   .tab_first {
+    left: 270px;
+} 
+}
+@media only screen and (max-width:1024px){
+   .tab_first {
+    left: 135px;
+} 
+}
+
+@media only screen and (max-width: 992px) {
+	.tab_first .panel-primary {
+		padding-left: 0px;
+	}
+	.tab_first .panel-heading ul li a {
+		padding: 12px 20px;
+	}
+	.tab_first {
+		top: -38px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.tab_first {
+		display: none;
+	}
+	.top_appy {
+		width: 192px;
+		margin-top: 5px;
+		position: relative;
+		z-index: 101;
+		float: none;
+		margin: 5px auto 0 auto;
+	}
+	.top_appy a {
+		height: 30px;
+		line-height: 30px;
+		font-size: 12px;
+	}
+	.tab_sec {
+		background: none;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.top_appy {
+		margin-top: 0px;
+	}
+	.tab_in_sec h2 span { 
+		display: none;
+	}
+	.tab_in_sec h2 strong {
+		background: none;
+	}
+	.tab_sec {
+		padding: 25px 0 25px 0px;
+	}
+	.tab_in_sec h2 {
+		margin: 0px;
+		margin-bottom: 15px;
+	}
+}
+/* --- B3 Accordion Collapse --- */
+*/
+
+
+/* --- B5 Wavy Circle BG --- */
+.circleContainer{width:400px;height:400px;border-radius:50%;background-color:#ffcc33;margin-left:30%;margin-top:5%;position:absolute;overflow:hidden;transform:rotate(17deg)}.splitA{width:100%;height:40%;float:left;background-color:#cc0066}.curveOne{width:100%;position:absolute;height:60%;float:left;transform:rotate(-50deg);margin-left:-13%;margin-top:-7%;border-bottom-left-radius:60%;border-top-left-radius:0%;background: linear-gradient(to bottom, red, #cc0066)}.curveTwo{width:100%;position:absolute;height:60%;float:left;margin-left:20%;margin-top:45%;transform:rotate(-50deg);border-bottom-right-radius:0%;border-top-right-radius:40%;background: linear-gradient(to top, #cc6600, #ff9933, #ffcc33)}
+/* --- B5 Wavy Circle BG --- */
+
+
+
+/* --- B5 Pulse Effect --- */
+body{background-color: #000}.wrapper{display: flex;justify-content: center;align-items: center;height: 100vh}.pulse{width: 70px;height: 70px;background-color: red;border-radius: 50%;position: relative;animation: animate 3s linear infinite}.pulse i{position: relative;display: flex;justify-content: center;align-items: center;font-size: 30px;color: #fff;height: 100%;cursor: pointer}@keyframes animate{0%{box-shadow: 0 0 0 0 rgb(255, 109, 74, 0.7) , 0 0 0 0 rgb(255, 109, 74, 0.7)}40%{box-shadow: 0 0 0 50px rgb(255, 109, 74, 0) , 0 0 0 0 rgb(255, 109, 74, 0.7)}80%{box-shadow: 0 0 0 50px rgb(255, 109, 74, 0) , 0 0 0 30px rgb(255, 109, 74, 0)}100%{box-shadow: 0 0 0 0 rgb(255, 109, 74, 0) , 0 0 0 30px rgb(255, 109, 74, 0)}}
+/* --- B5 Pulse Effect --- */
+
+
+
+/* --- B5 Anim Soc Icons --- */
+body {
+    background-color: #000;
+
+}
+
+.heading {
+    height: 100vh
+}
+
+.social-icons {
+    display: flex;
+    list-style: none
+}
+
+.social-icons li a {
+    padding: 20px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    color: #558B2F;
+    margin-right: 16px;
+    position: relative;
+    text-align: center;
+    line-height: 70px;
+    width: 80px;
+    height: 80px
+}
+
+.social-icons li a::before,
+.social-icons li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    transition: .5s linear
+}
+
+.social-icons li a:hover i {
+    transform: scale(1.1)
+}
+
+.social-icons li a:hover::before {
+    transform: skewX(20deg);
+    border-left: 3px solid;
+    border-right: 3px solid;
+    border-radius: 50%;
+}
+
+.social-icons li a:hover::after {
+    transform: skewY(-25deg);
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    border-radius: 50%;
+}
+
+@media (max-width:700px) {
+    ul.social-icons {
+        display: block
+    }
+}
+/* --- B5 Anim Soc Icons --- */
+
+
+/*
+/* --- B4 Blue Date-picker --- */
+body {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #C5CAE9 !important;
+    background-repeat: no-repeat;
+    padding: 0 !important;
+}
+
+.container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+input {
+    padding: 22px 15px !important;
+    border: 1px solid #CFD8DC !important;
+    border-radius: 4px !important;
+    box-sizing: border-box;
+    background-color: #fff !important;
+    color: #000 !important;
+    font-size: 16px !important;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+input:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #1976D2 !important;
+    outline-width: 0;
+}
+
+.fa-calendar {
+  position: absolute;
+  top: 13px;
+  font-size: 20px;
+  color: #1976D2;
+  z-index: 1000;
+}
+
+#fa-1 {
+  left: calc(50% - 40px);
+}
+
+#fa-2 {
+  left: calc(100% - 40px);
+}
+
+.form-control-placeholder {
+    position: absolute;
+    top: -10px !important;
+    padding: 12px 2px 0 2px;
+    opacity: 0.5;
+}
+
+#end-p {
+  left: calc(50% + 4px);
+}
+
+.form-control:focus + .form-control-placeholder,
+.form-control:valid + .form-control-placeholder {
+    font-size: 95%;
+    top: 10px;
+    transform: translate3d(0, -100%, 0);
+    opacity: 1;
+}
+
+::placeholder {
+    color: #BDBDBD;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #BDBDBD;
+}
+
+::-ms-input-placeholder {
+    color: #BDBDBD;
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0;
+}
+
+.datepicker {
+  background-color: #fff;
+  border-radius: 0 !important;
+  align-content: center !important;
+  padding: 0 !important;
+}
+
+.datepicker-dropdown {
+  top: 180px !important;
+  left: calc(50% - 173.5px) !important;
+  border-right: #1976D2;
+  border-left: #1976D2;
+}
+
+.datepicker-dropdown.datepicker-orient-left:before {
+  left: calc(50% - 6px) !important;
+}
+
+.datepicker-dropdown.datepicker-orient-left:after {
+  left: calc(50% - 5px) !important;
+  border-bottom-color: #1976D2;
+}
+
+.datepicker-dropdown.datepicker-orient-right:after {
+  border-bottom-color: #1976D2;
+}
+
+.datepicker table tr td.today, span.focused {
+  border-radius: 50% !important;
+  background-image: linear-gradient(#FFF3E0, #FFE0B2);
+}
+
+thead tr:nth-child(2) {
+  background-color: #1976D2 !important;
+}
+
+/*Weekday title*/
+thead tr:nth-child(3) th {
+  font-weight: bold !important;
+  padding: 20px 10px !important;
+  color: #BDBDBD !important;
+}
+
+tbody tr td {
+  padding: 10px !important;
+}
+
+tfoot tr:nth-child(2) th {
+  padding: 10px !important;
+  border-top: 1px solid #CFD8DC !important;
+}
+
+.cw {
+  font-size: 14px !important;
+  background-color: #E8EAF6 !important;
+  border-radius: 0px !important;
+  padding: 0px 20px !important;
+  margin-right: 10px solid #fff !important;
+}
+
+.old, .day, .new {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 0px !important;
+}
+
+.day.old, .day.new {
+  color: #E0E0E0 !important;
+}
+
+.day.old:hover, .day.new:hover {
+  border-radius: 50% !important;
+}
+
+.old-day:hover, .day:hover, .new-day:hover, .month:hover, .year:hover, .decade:hover, .century:hover {
+  border-radius: 50% !important;
+  background-color: #eee;
+}
+
+.active {
+  border-radius: 50% !important;
+  background-image: linear-gradient(#1976D2, #1976D2) !important;
+  color: #fff !important;
+}
+
+.range-start, .range-end {
+  border-radius: 50% !important;
+  background-image: linear-gradient(#1976D2, #1976D2) !important;
+}
+
+.range {
+  background-color: #E3F2FD !important;
+}
+
+.prev, .next, .datepicker-switch {
+  border-radius: 0 !important;
+  padding: 10px 10px 10px 10px !important;
+  font-size: 18px;
+  opacity: 0.7;
+  color: #fff;
+}
+
+.prev:hover, .next:hover, .datepicker-switch:hover {
+  background-color: inherit !important;
+  opacity: 1;
+}
+
+@media screen and (max-width: 726px) {
+  .datepicker-dropdown.datepicker-orient-right:before {
+    right: calc(50% - 6px);
+  }
+
+  .datepicker-dropdown.datepicker-orient-right:after {
+    right: calc(50% - 5px);
+  }
+}
+/* --- B4 Blue Date-picker --- */
+*/
+
+/*
+/* --- B4 Wobble Anim Btn --- */
+.btn {
+    margin-right: 0.5rem !important
+}
+
+.btn {
+    font-size: 0.875rem;
+    line-height: 1;
+    font-weight: 400;
+    padding: .7rem 1.5rem;
+    border-radius: 0.1275rem
+}
+
+.container {
+    margin-top: 100px
+}
+
+.toast {
+    transition: 0.32s all ease-in-out
+}
+
+.toast-container--fade {
+    right: 0;
+    bottom: 0
+}
+
+.toast-container--fade .toast-wrapper {
+    display: inline-block
+}
+
+.toast.fade-init {
+    opacity: 0
+}
+
+.toast.fade-show {
+    opacity: 1
+}
+
+.toast.fade-hide {
+    opacity: 0
+}
+/* --- B4 Wobble Anim Btn --- */
+*/
+
+
+/* --- B5 Gradient Wavy BG --- */
+@keyframes mygradient {
+    0% {
+        background-position: 0%
+    }
+
+    100% {
+        background-position: 100%
+    }
+}
+
+body {
+    margin: 0px;
+    background: linear-gradient(90deg, rgb(245, 127, 23), rgb(233, 30, 99), rgb(156, 39, 176), rgb(63, 81, 181));
+    height: 100vh;
+    width: 100vw;
+    background-size: 600% 100%;
+    background-repeat: no-repeat;
+    animation: mygradient 24s linear infinite alternate
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    50% {
+        transform: rotate(90deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+#wave {
+    height: 100%;
+    overflow: hidden
+}
+
+#wave:before {
+    content: '';
+    overflow: hidden;
+    position: absolute;
+    bottom: 12%;
+    left: -250vw;
+    width: 600vw;
+    height: 600vw;
+    background: rgba(0, 0, 0, .375);
+    border-radius: 48% 52% 52% 48% / 48% 52% 48% 52%;
+    animation: wave 9s ease-in-out infinite;
+    animation-delay: -3s
+}
+
+#wave:after {
+    content: '';
+    overflow: hidden;
+    position: absolute;
+    bottom: 12%;
+    left: -250vw;
+    width: 600vw;
+    height: 600vw;
+    background: rgba(0, 0, 0, .375);
+    border-radius: 48% 52% 52% 48% / 48% 52% 48% 52%;
+    animation: wave 9s linear infinite
+}
+/* --- B5 Gradient Wavy BG --- */
+
+
+
+/* --- Pure Css Animated Background --- */
+*{
+    padding:0;
+    margin:0;
+}
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(309deg, rgba(131, 58, 180, 1) 0%, rgba(200, 42, 18, 0.87718837535014) 79%)
+}
+
+.wrapper h3 {
+    position: relative;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0.8
+}
+
+.boxes div {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #fff
+}
+
+.boxes div:nth-child(1) {
+    top: 70%;
+    left: 10%;
+    animation: box-animate 10s infinite
+}
+
+.boxes div:nth-child(2) {
+    top: 20%;
+    left: 80%;
+    animation: box-animate 9s infinite
+}
+
+.boxes div:nth-child(3) {
+    top: 50%;
+    left: 50%;
+    animation: box-animate 6s infinite
+}
+
+.boxes div:nth-child(4) {
+    top: 80%;
+    left: 60%;
+    animation: box-animate 15s infinite
+}
+
+.boxes div:nth-child(5) {
+    top: 30%;
+    left: 30%;
+    animation: box-animate 9s infinite
+}
+
+.boxes div:nth-child(6) {
+    top: 90%;
+    left: 90%;
+    animation: box-animate 12s infinite
+}
+
+.boxes div:nth-child(7) {
+    top: 80%;
+    left: 30%;
+    animation: box-animate 2s infinite
+}
+
+.boxes div:nth-child(8) {
+    top: 40%;
+    left: 20%;
+    animation: box-animate 2s infinite
+}
+
+.boxes div:nth-child(9) {
+    top: 50%;
+    left: 80%;
+    animation: box-animate 2s infinite
+}
+
+@keyframes box-animate {
+    0% {
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1
+    }
+
+    100% {
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0
+    }
+}
+/* --- Pure Css Animated Background --- */
+
+
+
+/* --- Animated Bubble BG --- */
+.user-css-presentation,  
+.page {
+  background: #5E9EFF;
+  margin: 0;
+}
+
+.bubbles {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  left: var(--bubble-left-offset);
+  bottom: -75%;
+  display: block;
+  width: var(--bubble-radius);
+  height: var(--bubble-radius);
+  border-radius: 50%;
+  animation: float-up var(--bubble-float-duration) var(--bubble-float-delay) ease-in infinite;
+}
+.bubble::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(136, 246, 251, 0.3);
+  border-radius: inherit;
+  animation: var(--bubble-sway-type) var(--bubble-sway-duration) var(--bubble-sway-delay) ease-in-out alternate infinite;
+}
+.bubble:nth-child(0) {
+  --bubble-left-offset: 34vw;
+  --bubble-radius: 8vw;
+  --bubble-float-duration: 10s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 0s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(1) {
+  --bubble-left-offset: 29vw;
+  --bubble-radius: 9vw;
+  --bubble-float-duration: 10s;
+  --bubble-sway-duration: 5s;
+  --bubble-float-delay: 0s;
+  --bubble-sway-delay: 4s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(2) {
+  --bubble-left-offset: 30vw;
+  --bubble-radius: 2vw;
+  --bubble-float-duration: 12s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 0s;
+  --bubble-sway-delay: 1s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(3) {
+  --bubble-left-offset: 6vw;
+  --bubble-radius: 9vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(4) {
+  --bubble-left-offset: 9vw;
+  --bubble-radius: 6vw;
+  --bubble-float-duration: 8s;
+  --bubble-sway-duration: 5s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(5) {
+  --bubble-left-offset: 14vw;
+  --bubble-radius: 4vw;
+  --bubble-float-duration: 9s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 4s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(6) {
+  --bubble-left-offset: 67vw;
+  --bubble-radius: 10vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 5s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 4s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(7) {
+  --bubble-left-offset: 32vw;
+  --bubble-radius: 4vw;
+  --bubble-float-duration: 7s;
+  --bubble-sway-duration: 5s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(8) {
+  --bubble-left-offset: 47vw;
+  --bubble-radius: 9vw;
+  --bubble-float-duration: 8s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 4s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(9) {
+  --bubble-left-offset: 4vw;
+  --bubble-radius: 3vw;
+  --bubble-float-duration: 10s;
+  --bubble-sway-duration: 5s;
+  --bubble-float-delay: 4s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(10) {
+  --bubble-left-offset: 0vw;
+  --bubble-radius: 5vw;
+  --bubble-float-duration: 12s;
+  --bubble-sway-duration: 5s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 4s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(11) {
+  --bubble-left-offset: 20vw;
+  --bubble-radius: 3vw;
+  --bubble-float-duration: 12s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(12) {
+  --bubble-left-offset: 41vw;
+  --bubble-radius: 3vw;
+  --bubble-float-duration: 6s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(13) {
+  --bubble-left-offset: 99vw;
+  --bubble-radius: 3vw;
+  --bubble-float-duration: 6s;
+  --bubble-sway-duration: 5s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(14) {
+  --bubble-left-offset: 92vw;
+  --bubble-radius: 6vw;
+  --bubble-float-duration: 6s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 4s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(15) {
+  --bubble-left-offset: 49vw;
+  --bubble-radius: 2vw;
+  --bubble-float-duration: 10s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(16) {
+  --bubble-left-offset: 62vw;
+  --bubble-radius: 7vw;
+  --bubble-float-duration: 12s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 1s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(17) {
+  --bubble-left-offset: 43vw;
+  --bubble-radius: 10vw;
+  --bubble-float-duration: 10s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 4s;
+  --bubble-sway-delay: 1s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(18) {
+  --bubble-left-offset: 9vw;
+  --bubble-radius: 5vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 0s;
+  --bubble-sway-delay: 1s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(19) {
+  --bubble-left-offset: 16vw;
+  --bubble-radius: 7vw;
+  --bubble-float-duration: 12s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 4s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(20) {
+  --bubble-left-offset: 11vw;
+  --bubble-radius: 8vw;
+  --bubble-float-duration: 6s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 0s;
+  --bubble-sway-delay: 1s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(21) {
+  --bubble-left-offset: 18vw;
+  --bubble-radius: 6vw;
+  --bubble-float-duration: 7s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(22) {
+  --bubble-left-offset: 36vw;
+  --bubble-radius: 10vw;
+  --bubble-float-duration: 12s;
+  --bubble-sway-duration: 5s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(23) {
+  --bubble-left-offset: 66vw;
+  --bubble-radius: 10vw;
+  --bubble-float-duration: 6s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 4s;
+  --bubble-sway-delay: 4s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(24) {
+  --bubble-left-offset: 47vw;
+  --bubble-radius: 2vw;
+  --bubble-float-duration: 10s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 0s;
+  --bubble-sway-delay: 1s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(25) {
+  --bubble-left-offset: 20vw;
+  --bubble-radius: 6vw;
+  --bubble-float-duration: 8s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(26) {
+  --bubble-left-offset: 28vw;
+  --bubble-radius: 3vw;
+  --bubble-float-duration: 9s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 3s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(27) {
+  --bubble-left-offset: 14vw;
+  --bubble-radius: 2vw;
+  --bubble-float-duration: 6s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(28) {
+  --bubble-left-offset: 43vw;
+  --bubble-radius: 5vw;
+  --bubble-float-duration: 10s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(29) {
+  --bubble-left-offset: 59vw;
+  --bubble-radius: 7vw;
+  --bubble-float-duration: 12s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 4s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(30) {
+  --bubble-left-offset: 63vw;
+  --bubble-radius: 5vw;
+  --bubble-float-duration: 6s;
+  --bubble-sway-duration: 5s;
+  --bubble-float-delay: 4s;
+  --bubble-sway-delay: 3s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(31) {
+  --bubble-left-offset: 72vw;
+  --bubble-radius: 3vw;
+  --bubble-float-duration: 10s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 3s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(32) {
+  --bubble-left-offset: 66vw;
+  --bubble-radius: 5vw;
+  --bubble-float-duration: 8s;
+  --bubble-sway-duration: 5s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(33) {
+  --bubble-left-offset: 97vw;
+  --bubble-radius: 9vw;
+  --bubble-float-duration: 8s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 4s;
+  --bubble-sway-delay: 1s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(34) {
+  --bubble-left-offset: 97vw;
+  --bubble-radius: 4vw;
+  --bubble-float-duration: 7s;
+  --bubble-sway-duration: 5s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(35) {
+  --bubble-left-offset: 99vw;
+  --bubble-radius: 2vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 4s;
+  --bubble-sway-delay: 4s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(36) {
+  --bubble-left-offset: 77vw;
+  --bubble-radius: 6vw;
+  --bubble-float-duration: 8s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 4s;
+  --bubble-sway-delay: 1s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(37) {
+  --bubble-left-offset: 98vw;
+  --bubble-radius: 8vw;
+  --bubble-float-duration: 8s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 0s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(38) {
+  --bubble-left-offset: 95vw;
+  --bubble-radius: 6vw;
+  --bubble-float-duration: 7s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 0s;
+  --bubble-sway-delay: 3s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(39) {
+  --bubble-left-offset: 53vw;
+  --bubble-radius: 8vw;
+  --bubble-float-duration: 12s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 3s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(40) {
+  --bubble-left-offset: 22vw;
+  --bubble-radius: 9vw;
+  --bubble-float-duration: 10s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 4s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(41) {
+  --bubble-left-offset: 53vw;
+  --bubble-radius: 10vw;
+  --bubble-float-duration: 7s;
+  --bubble-sway-duration: 5s;
+  --bubble-float-delay: 4s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(42) {
+  --bubble-left-offset: 94vw;
+  --bubble-radius: 5vw;
+  --bubble-float-duration: 8s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(43) {
+  --bubble-left-offset: 49vw;
+  --bubble-radius: 9vw;
+  --bubble-float-duration: 10s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 0s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(44) {
+  --bubble-left-offset: 32vw;
+  --bubble-radius: 6vw;
+  --bubble-float-duration: 9s;
+  --bubble-sway-duration: 5s;
+  --bubble-float-delay: 0s;
+  --bubble-sway-delay: 1s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(45) {
+  --bubble-left-offset: 49vw;
+  --bubble-radius: 3vw;
+  --bubble-float-duration: 10s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(46) {
+  --bubble-left-offset: 84vw;
+  --bubble-radius: 7vw;
+  --bubble-float-duration: 7s;
+  --bubble-sway-duration: 5s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(47) {
+  --bubble-left-offset: 12vw;
+  --bubble-radius: 4vw;
+  --bubble-float-duration: 6s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 1s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(48) {
+  --bubble-left-offset: 80vw;
+  --bubble-radius: 6vw;
+  --bubble-float-duration: 12s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 0s;
+  --bubble-sway-delay: 3s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(49) {
+  --bubble-left-offset: 36vw;
+  --bubble-radius: 10vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 5s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(50) {
+  --bubble-left-offset: 47vw;
+  --bubble-radius: 1vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 3s;
+  --bubble-sway-type: sway-right-to-left;
+}
+
+@keyframes float-up {
+  to {
+    transform: translateY(-175vh);
+  }
+}
+@keyframes sway-left-to-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+@keyframes sway-right-to-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+/* --- Animated Bubble BG --- */
+*/
+
+/*
+/* --- B5 Anim On Scroll --- */
+body{background-color:#eee}.btn-sm{width:100px}.card{width:100%;background-color:#fff}
+/* --- B5 Anim On Scroll --- */
+/*
+/* --- B4 Particle Anim BG --- */
+.user-css,
+.user-css-extended,
+.user-css-presentation,
+ .page{ 
+	  width:100%;
+	  height:100%;
+	  background:#B71C1C;
+}
+/* --- B4 Particle Anim BG --- */
+/* --- Tailwind-Style keyframe Btns --- */
+.i::before{content: "";position: absolute;width: 0px;height: 0px;opacity: 20%;background: white;top: 0;left: 0;bottom: 0;right: 0;margin: auto}.i:hover:before{animation: anim-in 0.7s forwards ease-out}@keyframes anim-in{100%{opacity: 0%;border-radius: 0;width: 600px;height: 600px}0%{width: 0px;height: 0px;border-radius: 100%;opacity: 20%}}
+/* --- Tailwind-Style keyframe Btns --- */
+/* --- Text Animation sliding colors --- */
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+}
+h2{
+    position:relative;
+    font-size:2rem;
+    font-family:sans-serif;
+    -webkit-text-stroke:0.1vw #383d52;
+    text-transform:uppercase;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+h2::before{
+    content: attr(data-text);
+    position:absolute;
+    top:0;
+    left:0;
+    width:0%;
+    height:100%;
+    color:#4fed51;
+
+    -webkit-text-stroke:0vw #383d52;
+    border-right:2px solid #4fed51;
+    overflow:hidden;
+    /* transition:animate 6s linear infinite; */
+     animation:animate 6s linear infinite;
+
+}
+@keyframes animate{
+    0%{
+    width:0;
+}
+70%{
+    width:100%;
+ }
+}
+/* --- Text Animation sliding colors --- */
+
+
+/* --- animated search bar --- */
+.user-css,
+.user-css-extended,
+.user-css-presentation,
+.user-css-presentation-extended,  
+.form-control,  
+.searchbar {input[type^=text]:focus {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  }
+ }
+/* When the input field gets focus, change its width to 100% */
+.user-css,
+.user-css-extended,
+.user-css-presentation,
+.user-css-presentation-extended,  
+.form-control,  
+.searchbar-input {[type^=text]:focus {
+  width: 100%;
+  }
+ }
+/* --- animated search bar --- */
+*/
